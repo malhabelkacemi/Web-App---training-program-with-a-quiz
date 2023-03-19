@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8" lang="fr" >
+<title> </title>
+ <link rel="stylesheet" href="feuilles_style/stylePages.css" /> 
+
+ 
+<script>
+
+<!-- cette fct pour pouvoir telecharger l attestation de réussite  -->
+function print() {
+        var frame = document.getElementById('frame');
+        frame.contentWindow.focus();
+        frame.contentWindow.print();
+    }
+</script>
+</head>
+
+
+<body id="body_Attestaion">
+  <header>
+   <h1> ATTESTATION DE REUSSITE </h2>
+   </header> 
+  
+     <h2>
+       Félicitation....Vous pouvez maintenant télecharger votre certificat 
+     </h2>
+<iframe src="FichierPdf/certificat.pdf" id="frame" height="750"  ></iframe><br>
+
+
+</body>
+</html>

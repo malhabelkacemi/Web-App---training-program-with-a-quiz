@@ -1,0 +1,348 @@
+
+
+
+<!DOCTYPE html>
+<head>
+   <meta charset="UTF-8" lang="fr" > 
+     <title> Introduction </title>
+
+          <!-- la feuille de style stylePages est utilisé entre plusieurs pages (la page : introductio,HTML,CSS,Aller plus loins) -->
+            <link rel="stylesheet" href="feuilles_style/stylePages.css" /> 
+     
+            <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"> </script> <!-- pour pouvoir utiliser des icons( de site :https://fontawesome.com/ ) -->
+
+          <!-- quand l apprenti clique sur le bouton suivant,il sera rederigé vers le prochain chapitre (nouvelle page) -->
+           <script>
+		   <!--  
+             function suivant()
+              {
+	            window.location='HTML.html';
+              }
+			  -->
+           </script>
+</head>
+ 
+<body id="body_intro"> 
+   <header id="header1">
+     <h1> Découvrez le fonctionnement des sites web </h1> 
+    </header>
+
+
+
+
+<!-- menu general qui sera en commun entre plusieurs pages-->
+<!-- pour chaque lien je lui associer une icon  -->
+
+  <nav class="navbar">
+       
+	 <ul class="navbar-menu">
+        <li class="navbar-item logo">
+          <a href="#" class="navbar-link">
+            <span class="navbar-title">Aller à:</span>
+			
+         <!-- pour les icon j ai copié le code depuis ce site:	https://fontawesome.com/ -->
+            <i class="fas fa-chevron-right navbar-icon"></i>
+          </a>
+        </li>
+				
+        <li class="navbar-item">
+          <a href="index.html" class="navbar-link">
+            <i class="fas fa-home navbar-icon"></i>
+            <span class="navbar-title">Accueil</span>
+          </a>
+        </li>
+      
+	    <li class="navbar-item">
+          <a href="intro.html" class="navbar-link">
+            <i class="fas fa-code navbar-icon"></i>
+            <span class="navbar-title">Introduction</span>
+          </a>
+        </li>
+		
+		 <li class="navbar-item">
+          <a href="HTML.html" class="navbar-link">
+		  <i class="fab fa-html5 navbar-icon"></i>
+            <span class="navbar-title">Balises HTML</span>
+          </a>
+        </li>
+		
+        <li class="navbar-item">
+          <a href="CSS.html" class="navbar-link">
+		  <i class="fab fa-css3 navbar-icon"></i>
+            <span class="navbar-title">CSS</span>
+          </a>
+        </li>
+        <li class="navbar-item">
+          <a href="AllerPlusLoin.html" class="navbar-link">
+            <!-- <i class="fas fa-user navbar-icon"></i> -->
+			<i class="fas fa-graduation-cap navbar-icon"></i>
+            <span class="navbar-title">Aller plus loin</span>
+          </a>
+        </li>
+        <li class="navbar-item">
+          <a href="Quiz.html" class="navbar-link">
+            <i class="fas fa-tasks navbar-icon"></i>
+		   <span class="navbar-title">Quiz</span>
+		   <i class="fas fa-trophy navbar-icon  navbar-title "></i>   
+          </a>
+        </li>
+      </ul>
+  </nav>
+
+
+
+<!-- sommaire interne -->
+
+<nav class="nav_interne">
+ <ul>
+   	   <li> <a href="#fct"> Fonctionnement des sites </a> </li>
+       <li> <a href="#web" >Créer des sites web </a> </li>
+       <li><a href="#html_css" >HTML et CSS</a> </li>
+       <li><a href="#versionH" >versions de HTML </a> </li>
+       <li> <a href="#versionC" >versions de CSS </a> </li>
+       <li> <a href="#logiciel" >Logiciel à utiliser </a> </li>
+       <li><a href="#prk" >Le navigateur est important </a> </li>
+        	
+</ul>	
+</nav>
+
+
+
+<main id="main_intro">
+
+
+<section>
+     <header> <h2>Démarrons par les choses les plus simples </h2></header>
+       <p>
+	     Bonjour et bienvenue à toutes et à tous !
+         Voici donc le premier chapitre de ce cours pour débutants, qui va vous apprendre à créer votre site web !
+         Je vous propose de commencer par la question la plus simple mais aussi la plus importante : comment fonctionnent les sites web ?</p>
+       </p>
+</section>
+
+
+
+<section id="fct">
+     <header><h2>Le fonctionnement des sites web</h2></header> 
+       <p>
+         Ces éléments théoriques ne sont pas strictement nécessaires pour commencer à faire du développement web dans un premier temps. Cependant, ils seront plus qu'utiles pour
+         mieux comprendre comment le Web fonctionne en arrière-plan;Des clients et des serveurs Les clients correspondent aux appareils des utilisateurs connectés sur Internet (par exemple, votre ordinateur connecté par Wi-Fi ou votre téléphone connecté sur le réseau mobile) et aux logiciels d'accès au web (par exemple, les navigateurs comme Firefox ou Chrome).
+         Les serveurs sont des ordinateurs qui stockent des pages web, des sites ou des applications. Lorsqu'un appareil « client » souhaite accéder à une page web, une copie de la page est téléchargée depuis le serveur vers le client, la machine utilisée affiche alors le contenu dans le navigateur web de l'utilisateur.
+       </p>
+
+</section>
+
+
+
+<section>
+     <header><h2> Comment créer des sites web comme celui-ci ? </h2></header>
+	   <p>
+          Tous les sites web sont basés sur deux langages informatiques , ils sont incontournables et universels aujourd'hui. Tim Berners-Lee suit encore aujourd'hui avec attention l'évolution du Web. Il a créé le World Wide Web Consortium (W3C), qui définit les nouvelles versions des langages liés au Web. Il a par ailleurs créé plus récemment la World Wide Web Foundation, qui analyse et suit l'évolution du Web. De nombreuses personnes confondent (à tort) Internet et le Web. Il faut savoir que le Web fait partie d'Internet.
+          Internet est un grand ensemble qui comprend, entre autres : le Web, les e-mails, la messagerie instantanée, etc.
+          Tim Berners-Lee n'est donc pas l'inventeur d'Internet, c'est « seulement » l'inventeur du Web.
+          Quand vous consultez un site avec votre navigateur, il faut savoir que, en coulisses, des rouages s'activent pour permettre au site web de s'afficher. 
+       </p>
+</section>
+
+
+
+<section>
+     <header><h2 id="web">HTML et CSS : deux langages pour créer un site web</h2></header>
+       <p>
+	      Pour faciliter les choses,nous allons avoir affaire à deux langages qui se complètent car ils ont des rôles différents :
+	   </p>
+
+       <dl> 
+         <ol>
+           <li>
+              <dt><h3> HTML (HyperText Markup Language) :</h3></dt>
+                <dd>
+			       <p> Le langage HTML a été inventé par un certain Tim Berners-Lee en 1991. Son rôle est de gérer et organiser le contenu.  C'est donc en HTML que vous écrirez ce qui doit être affiché sur la page : du texte, des liens, des images… Vous direz par exemple : « Ceci est mon titre, ceci est mon menu, 
+                      voici le texte principal de la page, voici une image à afficher, etc. ». Dans ce cours, nous allons travailler sur la dernière version de HTML (HTML5) qui est aujourd'hui le langage d'avenir que tout le monde est incité à utiliser.
+
+                    </p>
+			    <dd>
+           </li>
+
+            <li>
+             <dt><h3>CSS (Cascading Style Sheets, aussi appelées feuilles de style) : </h3></dt>
+                <dd><p>  le rôle du CSS est de gérer l'apparence de la page web (agencement, positionnement, décoration, couleurs,
+                         taille du texte…). Ce langage est venu compléter le HTML en 1996.  Le HTML définit le contenu, le CSS permet, lui, d'arranger le contenu et de définir la présentation : couleurs, image de fond, marges, taille du texte…
+                         Le CSS a besoin d'une page HTML pour fonctionner. C'est pour cela que nous allons d'abord apprendre les bases du HTML avant de nous occuper  de la décoration en CSS.Vos premières pages ne seront donc pas les plus esthétiques, mais qu'importe ! Cela ne durera pas longtemps.
+
+                    </p>
+				 <dd> 
+			</li> 
+		 </ol>
+        </dl>
+
+      <p>
+         Vous pouvez très bien créer un site web uniquement en HTML, mais celui-ci ne sera pas très beau : l'information apparaîtra « brute ». 
+         C'est pour cela que le langage CSS vient toujours le compléter.
+         Pour vous donner une idée, la figure suivante montre ce que donne la même page avec et sans le CSS.
+      </p>
+
+           <figure > <img id="exemple" src="images/exemple.png"  alt="Page html sans et avec css" >
+           <figcaption> Exemple d'une page html sans et avec css </figcaption></figure><br/>
+</section>
+
+
+<section>
+         <header><h2 id="versionH">Les versions de HTML</h2></header>
+     <ul>
+         <li>HTML 1 : c'est la toute première version créée par Tim Berners-Lee en 1991.</li> 
+         <li>HTML 2 : la deuxième version du HTML apparaît en 1994 et prend fin en 1996 avec l'apparition du HTML 3.0. C'est cette version qui posera en fait les bases des versions suivantes du HTML.
+ 		     Les règles et le fonctionnement de cette version sont donnés par le W3C (tandis que la première version avait été créée par un seul homme).
+		 </li>
+         <li>HTML 3 : apparue en 1996, cette nouvelle version du HTML rajoute de nombreuses possibilités au langage, comme les tableaux, les applets, 
+             les scripts, le positionnement du texte autour des images, etc.</li>
+         <li>
+		      HTML 4 : cette version aura été utilisée un long moment durant les années 2000. Elle apparaît pour la première fois en 1998 et propose l'utilisation de frames 
+             (qui découpent une page web en plusieurs parties), des tableaux plus complexes, des améliorations sur les formulaires, etc. Mais surtout, cette version permet pour la première 
+              fois d'exploiter des feuilles de style, notre fameux CSS !</li>
+         <li>
+		     HTML 5 : c'est LA dernière version. De plus en plus répandue, elle fait beaucoup parler d'elle car elle apporte de nombreuses améliorations, comme la possibilité d'inclure
+             facilement des vidéos, un meilleur agencement du contenu, de nouvelles fonctionnalités pour les formulaires, etc. C'est cette version que nous allons découvrir ensemble.
+		</li>
+		
+        <h2 id="versionC">Les versions de CSS</h2>
+         <li>CSS 1 : dès 1996, on dispose de la première version du CSS. Elle pose les bases de ce langage qui permet de présenter sa page web, comme les couleurs, les marges, les polices
+              de caractères, etc.
+	    </li>
+		
+        <li>
+		    CSS 2 : apparue en 1999 puis complétée par CSS 2.1, cette nouvelle version de CSS ajoute de nombreuses options. On peut désormais utiliser des techniques de positionnement 
+            très précises, qui nous permettent d'afficher des éléments où on le souhaite sur la page.
+		</li>
+		
+        <li>
+		     CSS 3 : c'est la dernière version, qui apporte des fonctionnalités particulièrement attendues comme les bordures arrondies, les dégradés, les ombres, etc.</li> <br>
+             Notez que HTML5 et CSS3 <strong>ne sont pas encore des versions "officiellement" finalisées par le W3C .</strong> Cependant, même s'il peut y avoir des changements mineurs dans ces langages, 
+             je vous recommande chaudement de commencer dès aujourd'hui avec ces nouvelles versions. Leurs apports sont nombreux et valent vraiment le coup. 
+             La plupart des sites web professionnels se construisent aujourd'hui sur ces dernières versions.
+         </li>
+	  </ul>
+</section>
+
+
+
+
+<section>
+      <header> <h2 id="logiciel">De quel logiciel vais-je avoir besoin pour créer mon site web ? </h2></header>
+          <p>
+              Il existe effectivement de nombreux logiciels dédiés à la création de sites web. Mais, je vous rassure, vous n'aurez pas à débourser un seul centime. 
+              Pourquoi aller chercher un logiciel payant et compliqué, alors que vous avez déjà tout ce qu'il faut chez vous ?
+              Allez, mettons-nous en situation ! Comme je vous l'ai dit, nous allons créer notre site dans un éditeur de texte. Vous avez dû en installer un suite à mes conseils
+              dans le premier chapitre : qu'il s'appelle Sublime Text, Notepad++, Brackets, jEdit, vim, TextWrangler… pour créer un fichier ayant l'extension .html  (par exemple : 
+              test.html  ). Ce sera notre page web.
+              Ce fichier peut être ouvert dans le navigateur web simplement en faisant un double-clic dessus.
+              À l'intérieur du fichier, nous écrirons le contenu de notre page, accompagné de balises HTML.
+          </p>
+
+          <figure> <IMG   src="images/notpad.png"  alt="Notepad++" >
+            <figcaption > Notepad++ </figcaption>
+		  </figure><br/>
+</section>
+
+
+
+<section>
+      </header> <h1 id="prk">Pourquoi le navigateur est important?</h1></header>
+           <figure> <IMG   src="images/navigateurs1.png"  alt="navigateurs" >
+              <figcaption > Les icônes des navigateurs web les plus répandus</figcaption>
+		    </figure><br/>
+
+        <p>
+            Le navigateur est le programme qui nous permet de voir les sites web. Comme je vous l'ai expliqué plus tôt, le travail du navigateur est de lire le code HTML et CSS pour afficher un résultat visuel à l'écran. Si votre code CSS dit « Les titres sont en rouge », alors le navigateur affichera les titres en rouge. Le rôle du navigateur est donc 
+            essentiel ! On ne dirait pas, mais un navigateur est un programme extrêmement complexe. En effet, comprendre le code HTML et CSS n'est pas une mince affaire. Le principal problème, vous vous en rendrez vite compte, c'est que les différents navigateurs n'affichent pas le même site exactement de la même façon ! Il faudra vous y
+            faire et prendre l'habitude de vérifier régulièrement que votre site fonctionne correctement sur la plupart des navigateurs.L'ordinateur se base donc sur ce qu'on lui a expliqué en HTML et CSS pour savoir ce qu'il doit afficher comme le montre la figure ci-dessous:
+        </p>
+
+            <figure> <IMG   src="images/im_html.png"  alt="Du HTML à l'écran" > 
+                <figcaption > Du HTML à l'écran</figcaption>
+			</figure><br/>
+
+</section>
+<div id="div_svt">
+   <a onclick="suivant()" id="nxt"   alt="Aller au suivant" > Voir la suite de cours </a>
+</div>    
+
+</main>
+
+
+
+
+
+<!-- On a 3 blocs dans la partie de footer  -->
+<footer>
+
+<!-- <iframe src="footer.html" > </iframe> -->
+        <div class="footer-right">
+			  	
+				<label> S'abonner:</label><br>
+				<!-- enterer l email de l apprenti s il veut s'abonner -->
+				<input type="email" placeholder="Entrez votre e-mail"></input>
+				
+				
+				<!-- pour le contact, j ai utilisé cette partie -->
+				<div class="footer-icons">
+				<br>
+					<a href="#"><i class="fab fa-facebook ReseauxSoc"></i></a>
+					<a href="#"><i class="fab fa-twitter ReseauxSoc"></i></a>
+					<a href="#"><i class="fab fa-instagram ReseauxSoc"></i></a>
+					<a href="#"><i class="fab fa-linkedin ReseauxSoc"></i></a>
+					<a href="#"><i class="fab fa-youtube ReseauxSoc"></i></a>
+				</div>
+		</div>
+      
+	  <!-- cette partie pour donner un apperçu general sur la formation présentée -->
+	    <div class="footer-left">
+          <img id="picture" src="images/icon.png">
+				<p>A propos de site:</p>
+
+				
+				<p>Site d'apprentissage de html5 et css3</p>	
+				
+
+				<span id="hg">  ©2021 Programming with BELKACEMI-TECH.</span>
+			</div>
+
+
+ <!-- cette partie est consacréé pour ecrire qlq de mes coordonnées(num tel ,adresse et mon adresse email) au cas ou qlq un veut me laisser un commentaire ou me contacter -->
+	<div class="footer-center">
+		
+		<div>
+			<i class="fa fa-map-marker"></i>
+			 <span>Alger_Bab Ezzouar</span>
+		</div>		
+		
+      <br>
+		
+		<div>
+			<i class="fa fa-phone"></i>
+			  05 41 75 17 04
+		</div>
+		
+		<br>
+		<div>
+			<i class="fa fa-envelope"></i>
+			<a href="Tech.Belkacemi@gmail.com">malha.belkacemi24@gmail.com</a>
+		</div>
+
+	</div>
+		
+	
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

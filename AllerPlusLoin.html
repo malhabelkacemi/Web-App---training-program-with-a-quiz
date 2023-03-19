@@ -1,0 +1,251 @@
+
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8" lang="fr" >
+<title> </title>
+
+  <link rel="stylesheet" href="feuilles_style/stylePages.css" />
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"> </script> <!-- pour pouvoir utiliser des icons( de site :https://fontawesome.com/ ) -->
+  
+   <!-- quand l apprenti clique sur le bouton suivant,il sera rederigé vers le prochain chapitre (nouvelle page) -->
+           <script>
+		   <!-- 
+             function suivant()
+              {
+	            window.location='Quiz.html';
+              }
+			 --> 
+           </script>
+</head>
+ 
+<body > 
+<header>
+<h1 id="head_allerPlusLoin">Allons un peu plus loin !! </h1> 
+</header>
+
+
+<!-- menu general qui sera en commun entre plusieurs pages-->
+
+  <nav class="navbar">
+       
+	 <ul class="navbar-menu">
+        <li class="navbar-item logo">
+          <a href="#" class="navbar-link">
+            <span class="navbar-title">Aller à:</span>
+			
+         <!-- pour les icon j ai copié le code depuis ce site:	https://fontawesome.com/ -->
+            <i class="fas fa-chevron-right navbar-icon"></i>
+          </a>
+        </li>
+				
+        <li class="navbar-item">
+          <a href="index.html" class="navbar-link">
+            <i class="fas fa-home navbar-icon"></i>
+            <span class="navbar-title">Accueil</span>
+          </a>
+        </li>
+      
+	    <li class="navbar-item">
+          <a href="intro.html" class="navbar-link">
+            <i class="fas fa-code navbar-icon"></i>
+            <span class="navbar-title">Introduction</span>
+          </a>
+        </li>
+		
+		 <li class="navbar-item">
+          <a href="HTML.html" class="navbar-link">
+		  <i class="fab fa-html5 navbar-icon"></i>
+            <span class="navbar-title">Balises HTML</span>
+          </a>
+        </li>
+		
+        <li class="navbar-item">
+          <a href="CSS.html" class="navbar-link">
+		  <i class="fab fa-css3 navbar-icon"></i>
+            <span class="navbar-title">CSS</span>
+          </a>
+        </li>
+        <li class="navbar-item">
+          <a href="AllerPlusLoin.html" class="navbar-link">
+            <!-- <i class="fas fa-user navbar-icon"></i> -->
+			<i class="fas fa-graduation-cap navbar-icon"></i>
+            <span class="navbar-title">Aller plus loin</span>
+          </a>
+        </li>
+        <li class="navbar-item">
+          <a href="Quiz.html" class="navbar-link">
+            <i class="fas fa-tasks navbar-icon"></i>
+		   <span class="navbar-title">Quiz</span>
+		   <i class="fas fa-trophy navbar-icon  navbar-title "></i>   
+          </a>
+        </li>
+      </ul>
+  </nav>
+
+
+
+<!-- sommaire interne -->
+
+<nav class="nav_interne " id="nav_interne_AllerPlusLoin">
+ <ul>
+   	   <li> <a href="#cree">Créez un site pas à pas</a> </li>
+       <li> <a href="#mission" >Votre mission </a> </li>
+       <li><a href="#Organiser_html" >Organiser le HTML</a> </li>
+       <li><a href="#Organiser_css" >Mettre en forme en CSS </a> </li>        	
+</ul>	
+</nav>
+
+
+
+
+<main id="main_AllerPlusLoin">
+
+<section id="cree">
+      </header> <h2>Créez un site pas à pas</h2></header>
+        <p>
+           À vous de jouer ! c'est l'heure de pratiquer.
+           C'est un chapitre un peu particulier, assez différent de ce que vous avez lu jusqu'à maintenant. En fait, c'est ce que j'appelle un « TP » (travaux pratiques). Maintenant, vous ne pouvez plus vous contenter de lire mes chapitres à moitié endormi, vous allez devoir mettre la main à la pâte en même temps que moi.
+           Vous avez lu beaucoup de théorie jusqu'ici, mais vous vous demandez sûrement comment font les webmasters pour créer d'aussi beaux sites. 
+           Vous vous dites que vous êtes encore loin d'avoir les connaissances nécessaires pour construire tout un site… Eh bien vous vous trompez !
+           <br> En ce qui me concerne, dans ce TP, je vais réaliser le site web de notre ami Zozor qui a décidé de partir en voyage à travers le monde et sa première déstination sera… San Francisco ! Il veut donc créer un site web pour qu'on le connaisse et pour qu'on suive son périple à travers le monde. 
+                Voici à quoi ressemble le site qu'on va creer.
+		</p>
+        <br>
+  		 <figure class="figur_AllerPlusLoin">  <IMG  src="images/zozor.png"  alt="Zozor" >
+             <figcaption > Site zozor</figcaption>
+         </figure><br/>
+</section>
+
+
+<section id="mission">
+      </header> <h2>Votre mission</h2></header>
+        <p>
+           La première étape consiste à maquetter le design, pour avoir un objectif du site web à réaliser.Il existe deux possibilités :
+           <ul>
+		      <li> 
+		         Soit vous êtes un graphiste (ou vous en connaissez un) ayant l'habitude d'imaginer des designs, avec des logiciels comme Photoshop
+		      </li>
+           
+		      <li>
+			     Soit vous n'êtes pas très créatif, vous manquez d'inspiration et, dans ce cas, vous allez chercher votre inspiration sur des sites web comme <a  class="lien_zozor" href= "https://html5up.net/">Celui-là </a>, qui vous proposent des idées de design et qui peuvent même vous donner le code HTML/CSS tout prêt !
+              </li>  
+				Il ne nous reste plus qu'à réaliser ce site web ! Nous allons procéder en deux temps :
+                <br> Nous allons construire le squelette HTML de la page.Puis nous allons le mettre en forme et le mettre en page avec CSS.  <strong>Allez, au boulot !</strong>
+           </ul> 
+		   
+         
+		</p>   
+</section>
+
+
+<!-- on a deux sous titres, du coup on utilise une liste ordonnée -->
+<ol>
+  <li>
+    <section id="Organiser_html">
+      </header> <h3>Organiser le contenu en HTML</h3></header>
+        <p>
+           La première chose à faire est de distinguer les principaux blocs sur la maquette. Ces blocs vont constituer le squelette de notre page.
+           On peut imaginer d'autres façons de faire le découpage, retenez bien que ma proposition n'est pas forcément la seule et unique solution !
+           Pour créer ce squelette, nous allons utiliser différentes balises HTML :
+           les balises structurantes de HTML5, que nous connaissons : &lt;header&gt; , &lt;section&gt; , &lt;nav&gt; ,etc. ;
+           la balise universelle &lt;div&gt;  quand aucune balise structurante ne convient
+           Le HTML n'est pas vraiment la partie complexe de la réalisation du site web. En fait, si vous avez bien compris comment imbriquer des balises, vous ne devriez pas avoir de mal à réaliser un code approchant du mien 
+          </p> 
+		<br>
+		  <figure class="figur_AllerPlusLoin">  <IMG  src="images/zozorHtml.png"  alt="ZozorHtml" >
+                  <figcaption > Site zozor partie html</figcaption>
+          </figure><br/>
+		  
+     </section>
+  </li>
+
+   <li>
+    <section id="Organiser_css">
+      </header> <h3>Mettre en forme en CSS</h3></header>
+        <p>	
+           
+           Les choses se compliquent un peu plus lorsqu'on arrive au CSS. En effet, il faut du travail (et parfois un peu d'astuce) pour obtenir un résultat se rapprochant de la maquette. Je dis bien « se rapprochant », car vous ne pourrez jamais obtenir un résultat identique au pixel près.
+           Mettez-vous bien cela en tête : le but est d'obtenir le rendu le plus proche possible, sans chercher la perfection. Même si vous obtenez selon vous « la perfection » sur un navigateur, vous pouvez être sûr qu'il y aura des différences sur un autre navigateur (plus ancien) ou sur une autre machine que la vôtre. Nous allons donc faire au mieux et ce sera déjà du travail, vous verrez.
+            <br><br>
+           Je mets à disposition le code final de la page web que vous devez réaliser. Cliquez sur ce lien pour voir toute les étapes de sa création:
+           <a class="lien_zozor" href=" https://openclassrooms.com/fr/courses/1603881-apprenez-a-creer-votre-site-web-avec-html5-et-css3/1606688-tp-creez-un-site-pas-a-pas">Voir le site </a> 
+           <br> Essayez de refaire le site sans la solution sous les yeux, maintenant ! Ça va vous prendre du temps, vous n'y arriverez sûrement pas du premier coup, 
+		        mais pas de panique : persévérez, ça finira par marcher. 
+         </p>
+     </section>
+    </li>
+</ol>
+
+<div id="div_svt">
+   <a onclick="suivant()" id="nxt"   alt="Aller au suivant" > JOUER AU QUIZ </a>
+</div>
+</main>
+
+
+
+<!-- On a 3 blocs dans la partie de footer  -->
+<footer>
+
+        <div class="footer-right">
+			  	
+				<label> S'abonner:</label><br>
+				<!-- enterer l email de l apprenti s il veut s'abonner -->
+				<input type="email" placeholder="Entrez votre e-mail"></input>
+				
+				
+				<!-- pour le contact, j ai utilisé cette partie -->
+				<div class="footer-icons">
+				<br>
+					<a href="#"><i class="fab fa-facebook ReseauxSoc"></i></a>
+					<a href="#"><i class="fab fa-twitter ReseauxSoc"></i></a>
+					<a href="#"><i class="fab fa-instagram ReseauxSoc"></i></a>
+					<a href="#"><i class="fab fa-linkedin ReseauxSoc"></i></a>
+					<a href="#"><i class="fab fa-youtube ReseauxSoc"></i></a>
+				</div>
+		</div>
+      
+	  <!-- cette partie pour donner un apperçu general sur la formation présentée -->
+	    <div class="footer-left">
+          <img id="picture" src="images/icon.png">
+				<p>A propos de site:</p>
+
+				
+				<p>Site d'apprentissage de html5 et css3</p>	
+				
+
+				<span id="hg">  ©2021 Programming with BELKACEMI-TECH.</span>
+			</div>
+
+
+ <!-- cette partie est consacréé pour ecrire qlq de mes coordonnées(num tel ,adresse et mon adresse email) au cas ou qlq un veut me laisser un commentaire ou me contacter -->
+	<div class="footer-center">
+		
+		<div>
+			<i class="fa fa-map-marker"></i>
+			 <span>Alger_Bab Ezzouar</span>
+		</div>		
+		
+      <br>
+		
+		<div>
+			<i class="fa fa-phone"></i>
+			  05 41 75 17 04
+		</div>
+		
+		<br>
+		<div>
+			<i class="fa fa-envelope"></i>
+			<a href="Tech.Belkacemi@gmail.com">malha.belkacemi24@gmail.com</a>
+		</div>
+
+	</div>
+		
+	
+</footer>
+
+
+
+
+ 
+</body>
+</html>

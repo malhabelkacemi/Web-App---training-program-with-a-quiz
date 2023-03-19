@@ -1,0 +1,502 @@
+
+<!DOCTYPE html>
+<head>
+ <meta charset="UTF-8" lang="fr" >
+  <title>Balises de HTML</title>
+    
+     <link rel="stylesheet" href="feuilles_style/stylePages.css" />    <!--  poula feuille de style   -->
+     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"> </script>
+	  
+	  <!-- quand l apprenti clique sur le bouton suivant,il sera rederigé vers le prochain chapitre (nouvelle page) -->     
+		  <script>
+		  <!-- 
+             function suivant()
+              {
+	            window.location='CSS.html';
+              }
+			 --> 
+           </script>
+	 
+</head>
+
+
+
+<body > 
+  <header id="header_html">
+      <h1>Voyons voir à quoi ressemble les fameuses balises de HTML! </h1> 
+  </header>
+
+
+
+
+<!-- menu general qui sera en commun entre plusieurs pages-->
+  <nav class="navbar">
+       
+	 <ul class="navbar-menu">
+        <li class="navbar-item logo">
+          <a href="#" class="navbar-link">
+            <span class="navbar-title">Aller à:</span>
+			
+         <!-- pour les icon j ai copié le code depuis ce site:	https://fontawesome.com/ -->
+            <i class="fas fa-chevron-right navbar-icon"></i>
+          </a>
+        </li>
+				
+        <li class="navbar-item">
+          <a href="index.html" class="navbar-link">
+            <i class="fas fa-home navbar-icon"></i>
+            <span class="navbar-title">Accueil</span>
+          </a>
+        </li>
+      
+	    <li class="navbar-item">
+          <a href="intro.html" class="navbar-link">
+            <i class="fas fa-code navbar-icon"></i>
+            <span class="navbar-title">Introduction</span>
+          </a>
+        </li>
+		
+		 <li class="navbar-item">
+          <a href="HTML.html" class="navbar-link">
+		  <i class="fab fa-html5 navbar-icon"></i>
+            <span class="navbar-title">Balises HTML</span>
+          </a>
+        </li>
+		
+        <li class="navbar-item">
+          <a href="CSS.html" class="navbar-link">
+		  <i class="fab fa-css3 navbar-icon"></i>
+            <span class="navbar-title">CSS</span>
+          </a>
+        </li>
+        <li class="navbar-item">
+          <a href="AllerPlusLoin.html" class="navbar-link">
+            <!-- <i class="fas fa-user navbar-icon"></i> -->
+			<i class="fas fa-graduation-cap navbar-icon"></i>
+            <span class="navbar-title">Aller plus loin</span>
+          </a>
+        </li>
+        <li class="navbar-item">
+          <a href="Quiz.html" class="navbar-link">
+            <i class="fas fa-tasks navbar-icon"></i>
+		   <span class="navbar-title">Quiz</span>
+		   <i class="fas fa-trophy navbar-icon  navbar-title "></i>   
+          </a>
+        </li>
+      </ul>
+  </nav>
+
+<!-- sommaire interne -->
+
+<nav class="nav_interne">
+ <ul>
+	<li> <a href="#niv1"> Balises de premier niveau </a> </li>
+       <li> <a href="#ent" >Balises d'en-tête</a> </li>
+        <li><a href="#sect" >Balises sectionnantes</a> </li>
+        <li><a href="#str" >Structuration du texte </a> </li>
+       <li> <a href="#list" >Balises de listes </a> </li>
+       <li> <a href="#Btab" >Balises de tableau </a> </li>
+        <li><a href="#Bgener" >Balises génériques </a> </li>        	
+</ul>	
+</nav>
+
+
+
+
+<main id="main_HTML">
+
+         <section>
+             <header> <h2> Un apperçu géneral </h2></header>
+                <p>
+  			      Nous allons découvrir les bases du langage HTML. pour créer une page web, il ne suffit pas de taper simplement du texte comme on vient de le faire. En plus de ce texte, il faut aussi écrire ce qu'on appelle des balises, 
+                  qui vont donner des instructions à l'ordinateur comme « aller à la ligne », « afficher une image », etc.Le code HTML est composé de balises imbriquées les unes dans les autres ; cela permet de regrouper les informations.
+                </p>
+		 </section>
+
+
+         <section>
+            <header><h2>Les balises HTML</h2></header> 
+              <p>
+			    Les pages HTML sont remplies de ce qu'on appelle des balises. Celles-ci sont invisibles à l'écran pour vos visiteurs, mais elles permettent à l'ordinateur de
+                comprendre ce qu'il doit afficher.Les balises se repèrent facilement. Elles sont entourées de « chevrons », c'est-à-dire des symboles <  et > , comme ceci : &lt;balise&gt;  .
+                À quoi est-ce qu'elles servent ? Elles indiquent la nature du texte qu'elles encadrent. Elles veulent dire par exemple « Ceci est le titre de la page », « Ceci est une image »,
+                 « Ceci est un paragraphe de texte », « Ceci est un tableau »  « Ceci est une liste» etc.
+              <p>
+		 </section>
+
+
+         <section>
+             <header> <h3>On distingue deux types de balises : </h3></header>
+                <ul>
+                   <li>
+				        <h4>Les balises en paire(&lt;balise &gt; &lt;/balise&gt;):</h4>
+				   </li>
+                       <p>Elles s'ouvrent et se ferment pour délimiter le contenu (début et fin d'un titre, par exemple) ;</p>
+                   <li>
+				        <h4>balises orphelines (&lt;balise/&gt;):</h4>
+				   </li>
+				   
+                      <p>elles permettent d'insérer un élément à un endroit précis (par exemple une image).
+                         Les balises sont parfois accompagnées d'attributs pour donner des indications supplémentaires (exemple : <image nom="photo.jpg" />  ).
+                         Une page web est constituée de deux sections principales : un en-tête ( &lt;head&gt; ) et un corps (&lt;body&gt; ).
+                         On peut afficher le code source de n'importe quelle page web en faisant un clic droit puis en sélectionnant Afficher le code source de la page  .
+                      </p>
+			     </ul>
+         </section>
+
+         <section>
+		     <header><h2>Voir les balises les plus utilisées: </h2></header>
+                  <ul>
+                    <section id="niv1">
+                       <li> <header><h3>Balises de premier niveau</h3></header></li>
+                            Les balises de premier niveau sont les principales balises qui structurent une page HTML. Elles sont indispensables pour réaliser le « code minimal » d'une page web.
+                             
+<br><br>					 
+<table>
+<thead>
+   <tr><th>Balise</th><th>Description</th></tr>
+</thead>
+
+<tbody>
+    <tr><td>&lt;html&gt;</td><td>Balise principale</td></tr>  
+    <tr><td>&lt;head&gt;</td><td>En-tête de la page</td></tr> 
+    <tr><td>&lt;body&gt;</td><td>Corps de la page</td></tr>
+</tbody>
+</table>
+
+    <p> La toute première ligne  dans un code html s'appelle le doctype. Elle est indispensable car c'est elle qui indique qu'il s'agit bien d'une page web HTML.</p>
+    <p>Code minimal d'une page HTML :</p>
+     <figure> <IMG   src="images/code.png"  alt="code" >
+     <figcaption > Code minimale de html </figcaption></figure><br/>
+
+                     </section>	
+
+
+
+<section id="ent">
+<li><header><h3>Balises d'en-tête</h3></header></li>
+Ces balises sont toutes situées dans l'en-tête de la page web, c'est-à-dire entre <head>  et </head>  :
+<br><br>
+<table>
+
+<thead>
+<tr><th>Balise</th><th>Description</th></tr>
+</thead>
+
+<tbody>
+<tr><td>&lt;link /&gt;</td><td>Liaison avec des liens ou avec des feuilles de style ou javascript</td></tr>  
+<tr><td>&lt;meta /&gt;</td><td>Métadonnées de la page web (charset, mots-clés, etc.)</td></tr>
+<tr><td>&lt;script&gt;</td><td>Code JavaScript</td></tr> 
+<tr><td>&lt;style&gt;</td><td>Code CSS</td></tr>
+<tr><td>&lt;title&gt;</td><td>Titre de la page</td></tr>
+</tbody>
+
+</table>
+</section>
+
+
+<section id="sect">
+<li><header><h3>Balises sectionnantes</h3></header></li>
+Ces balises permettent de construire le squelette de notre site web.
+
+
+<br><br>
+<table>
+
+<thead>
+<tr><th>Balise</th><th>Description</th></tr>
+</thead>
+
+<tbody>
+<tr><td>&lt;header&gt;</td><td>En-tête</td></tr>  
+<tr><td>&lt;nav&gt;</td><td>Liens principaux de navigation</td></tr> 
+<tr><td>&lt;footer&gt;</td><td>Pied de page</td></tr>
+<tr><td>&lt;section&gt;</td><td>Section de page</td></tr>
+<tr><td>&lt;article&gt;</td><td>Article (contenu autonome)</td></tr>
+<tr><td>&lt;aside&gt;</td><td>Informations complémentaires</td></tr>
+</tbody>
+
+</table>
+<figure> <IMG   src="images/structure.png"  alt="Exemple de mise en forme type(obtenue avec CSS)" >
+<figcaption >Exemple de mise en forme type avec css </figcaption></figure><br/>
+
+</section>
+
+
+
+
+<section id="str">
+<li><h3>Balises de structuration du texte</h3></li>
+
+<br>
+<table>
+
+<thead>
+<tr><th>Balise</th><th>Description</th></tr>
+</thead>
+
+
+<tbody>
+<tr><td>&lt;h1&gt;</td><td>Titre de niveau 1</td></tr>  
+<tr><td>&lt;h2&gt;</td><td>Titre de niveau 2</td></tr>  
+<tr><td>&lt;h3&gt;</td><td>Titre de niveau 3</td></tr>    
+<tr><td>&lt;h4&gt;</td><td>Titre de niveau 4</td></tr>  
+<tr><td>&lt;h5&gt;</td><td>Titre de niveau 5</td></tr>   
+<tr><td>&lt;h6&gt;</td><td>Titre de niveau 6</td></tr>  
+<tr><td>&lt;abbr&gt;</td><td>Abréviation</td></tr>  
+<tr><td>&lt;blockquote&gt;</td><td>Citation (longue)</td></tr>  
+<tr><td>&lt;q&gt;</td><td>Citation (courte)</td></tr>  
+<tr><td>&lt;cite&gt;</td><td>Citation du titre d'une œuvre ou d'un évènement</td></tr>  
+<tr><td>&lt;sup&gt;</td><td>Exposant</td></tr>  
+<tr><td>&lt;sub&gt;</td><td>Indice</td></tr>  
+<tr><td>&lt;strong&gt;</td><td>Mise en valeur forte</td></tr>  
+<tr><td>&lt;mark&gt;</td><td>Mise en valeur visuelle</td></tr>  
+<tr><td>&lt;img /&gt;</td><td>Insérer une image </td></tr>  
+<tr><td>&lt;figure&gt;</td><td>Figure (image, code, etc.)</td></tr>  
+<tr><td>&lt;figcaption&gt;</td><td>Description de la figure</td></tr>  
+<tr><td>&lt;audio&gt;</td><td>Son</td></tr>  
+<tr><td>&lt;video&gt;</td><td>Insérer une image</td></tr>  
+<tr><td>&lt;source&gt;</td><td>Format source pour les balises &lt;audio&gt;  et  &lt;vidéo&gt;</td></tr>  
+<tr><td>&lt;a&gt;</td><td>Lien hypertexte</td></tr>  
+<tr><td>&lt;br /&gt;</td><td>Retour à la ligne</td></tr>  
+<tr><td>&lt;p&gt;</td><td>Paragraphe</td></tr>  
+<tr><td>&lt;hr /&gt;</td><td>Ligne de séparation horizontale</td></tr>  
+<tr><td>&lt;address&gt;</td><td>Adresse de contact</td></tr>  
+<tr><td>&lt;pre&gt;</td><td>Affichage formaté (pour les codes sources)</td></tr>  
+<tr><td>&lt;progress&gt;</td><td>Barre de progression</td></tr>  
+<tr><td>&lt;time&gt;</td><td>Date ou heure</td></tr>  
+</tbody>
+</table>
+ 
+<figure> <IMG   src="images/illust.png"  alt="Page html " width="70%"; >
+<figcaption > Exemple d'une page html sans css </figcaption></figure><br/>
+
+
+</section>
+
+
+
+<section id="list">
+<li><header><h3>Balises de listes</h3></header></li>
+Cette section énumère toutes les balises HTML permettant de créer des listes (listes à puces, listes numérotées, listes de définitions…)
+<br><br>
+<table>
+
+<thead>
+<tr><th>Balise</th><th>Description</th></tr>
+</thead>
+
+<tbody>
+<tr><td>&lt;ul&gt;</td><td>Liste à puces, non numérotée</td></tr>  
+<tr><td>&lt;ol&gt;</td><td>Liste numérotée</td></tr> 
+<tr><td>&lt;li&gt;</td><td>Élément de la liste à puces</td></tr>
+<tr><td>&lt;dl&gt;</td><td>Liste de définitions</td></tr>
+<tr><td>&lt;dt&gt;</td><td>Terme à définir</td></tr>
+<tr><td>&lt;dd&gt;</td><td>Définition du terme</td></tr>
+</tbody>
+</table>
+
+
+
+<figure> <IMG   src="images/ol.png"  alt="Exemple de liste" >
+<figcaption > Exemple de liste avec ol </figcaption></figure><br/>
+
+
+
+</section>
+
+
+<section id="Btab">
+<li><header><h3>Balises de tableau</h3></header></li>
+Indispensables pour organiser les informations, les tableaux sont un petit peu délicats à construire en HTML : cela explique que je vous les présente seulement maintenant. Il va en effet falloir imbriquer de nouvelles balises HTML dans un ordre précis.
+
+<br><br>
+<table>
+
+<thead>
+<tr><th>Balise</th><th>Description</th></tr>
+</thead>
+
+<tbody>
+<tr><td>&lt;caption&gt;</td><td>Titre du tableau</td></tr>  
+<tr><td>&lt;tr&gt;</td><td>Ligne de tableau</td></tr> 
+<tr><td>&lt;th&gt;</td><td>Cellule d'en-tête</td></tr>
+<tr><td>&lt;td&gt;</td><td>Cellule</td></tr>
+<tr><td>&lt;thead&gt;</td><td>Section de l'en-tête du tableau</td></tr>
+<tr><td>&lt;tbody&gt;</td><td>Section du corps du tableau</td></tr>
+<tr><td>&lt;tfoot&gt;</td><td>Section du pied du tableau</td></tr>
+</tbody>
+</table>
+
+
+<figure> <IMG   src="images/tabl.png"  alt="Tableau avec html" >
+<figcaption > Exemple d'un tableau html avec css(le code css on le verra par la suite)</figcaption></figure><br/>
+
+
+
+</section>
+
+
+<section id="Bgener">
+<li><header><h3>Balises génériques</h3></header></li>
+<p>
+   Les balises génériques sont des balises qui n'ont pas de sens sémantique
+   Parfois, on a besoin d'utiliser des balises génériques (aussi appelées balises universelles) car aucune des autres balises ne convient. On utilise le plus souvent des balises génériques pour construire son design.
+   Il y a deux balises génériques : l'une est inline, l'autre est block.
+</p>
+<br><br>
+<table>
+
+<thead>
+<tr><th>Balise</th><th>Description</th></tr>
+</thead>
+
+<tbody>
+<tr><td>&lt;span&gt;</td><td>Balise générique de type inline</td></tr>  
+<tr><td>&lt;div&gt;</td><td>Balise générique de type block</td></tr> 
+</tbody>
+
+</table>
+<br><br>
+
+   Ces balises ont un intérêt uniquement si vous leur associez un attribut class  , id  ou style  :
+<p>
+   <ul>
+        <li>class  : indique le nom de la classe CSS à utiliser.</li>
+        <li>id  : donne un nom à la balise. Ce nom doit être unique sur toute la page car il permet d'identifier la balise. Vous pouvez vous servir de l'ID pour de nombreuses choses, par exemple pour créer un lien vers une ancre, pour un style CSS de type ID, pour des manipulations en JavaScript, etc.</li>
+        <li>style  : cet attribut vous permet d'indiquer directement le code CSS à appliquer. Vous n'êtes donc pas obligé d'avoir une feuille de style à part, vous pouvez mettre directement les attributs CSS. Notez qu'il est préférable de ne pas utiliser cet attribut et de passer à la place par une feuille de style externe, car cela rend votre site plus facile à mettre à jour par la suite.</li>
+   </ul>
+Ces trois attributs ne sont pas réservés aux balises génériques : vous pouvez aussi les utiliser sans aucun problème dans la plupart des autres balises
+</p>
+</section>
+
+
+
+</ul>
+</section>
+
+
+<section>
+<header>
+<h2>Les commentaires en HTML</h2></header>
+  <p>
+    Tout ce qui est contenu entre les symboles &lt;!-- et --&gt; est considéré
+    par le navigateur comme des commentaires et n’est pas affiché
+    dans la page.Comme pour tout langage de programmation, il est fortement
+    recommandé de commenter le code HTML
+</p>
+</section>
+
+
+<section><header>
+<h2>A connaitre absolument!!</h2></header>
+   <p> 
+      Les caractères réservés en HTML doivent être remplacés par des entités de caractères. Les caractères qui ne sont pas présents sur votre clavier peuvent également être remplacés par des entités.
+    </p>
+
+<br><br>
+<table>
+
+<thead>
+<tr><th>Entité HTML</th><th>Nom de l’entité</th></tr>
+</thead>
+
+<tbody>
+<tr><td>Espace protégé (non cassant)</td><td>&ampnbsp</td></tr>  
+<tr><td>&lt;</td><td> &amplt </td> </tr> 
+<tr><td>&gt;</td><td>&ampgt </td></tr>
+<tr><td>&amp;</td><td>&ampamp </td></tr>
+<tr><td>&quot;</td><td>&ampquot  </td></tr>
+<tr><td>&apos;</td><td>&ampapos </td></tr>
+</tbody>
+
+</table>
+
+
+</section>
+
+<br><br>
+<section>
+    
+  	  Dans la partie suivante on va entammer la plupart des propriétés utilisése en css pour completer le HTML.
+	  <br>Cliquez sur le bouton ci-dessous  si vous souhaitez continuer le cours maintenant!!
+    
+</section>
+<div id="div_svt">
+<a onclick="suivant()" id="nxt"   alt="Aller au suivant" > Voir la suite de cours  </a>
+</div>
+
+
+</main>
+
+<!-- On a 3 blocs dans la partie de footer  -->
+<footer>
+
+        <div class="footer-right">
+			  	
+				<label> S'abonner:</label><br>
+				<!-- enterer l email de l apprenti s il veut s'abonner -->
+				<input type="email" placeholder="Entrez votre e-mail"></input>
+				
+				
+				<!-- pour le contact, j ai utilisé cette partie -->
+				<div class="footer-icons">
+				<br>
+					<a href="#"><i class="fab fa-facebook ReseauxSoc"></i></a>
+					<a href="#"><i class="fab fa-twitter ReseauxSoc"></i></a>
+					<a href="#"><i class="fab fa-instagram ReseauxSoc"></i></a>
+					<a href="#"><i class="fab fa-linkedin ReseauxSoc"></i></a>
+					<a href="#"><i class="fab fa-youtube ReseauxSoc"></i></a>
+				</div>
+		</div>
+      
+	  <!-- cette partie pour donner un apperçu general sur la formation présentée -->
+	    <div class="footer-left">
+          <img id="picture" src="images/icon.png">
+				<p>A propos de site:</p>
+
+				
+				<p>Site d'apprentissage de html5 et css3</p>	
+				
+
+				<span id="hg">  ©2021 Programming with BELKACEMI-TECH.</span>
+			</div>
+
+
+ <!-- cette partie est consacréé pour ecrire qlq de mes coordonnées(num tel ,adresse et mon adresse email) au cas ou qlq un veut me laisser un commentaire ou me contacter -->
+	<div class="footer-center">
+		
+		<div>
+			<i class="fa fa-map-marker"></i>
+			 <span>Alger_Bab Ezzouar</span>
+		</div>		
+		
+      <br>
+		
+		<div>
+			<i class="fa fa-phone"></i>
+			  05 41 75 17 04
+		</div>
+		
+		<br>
+		<div>
+			<i class="fa fa-envelope"></i>
+			<a href="Tech.Belkacemi@gmail.com">malha.belkacemi24@gmail.com</a>
+		</div>
+
+	</div>
+		
+	
+</footer>
+
+
+
+	
+</footer>
+
+
+</body>
+</html>
+
+
+

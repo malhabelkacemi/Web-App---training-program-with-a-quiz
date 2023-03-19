@@ -1,0 +1,347 @@
+
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8" lang="fr" >
+<title> </title>
+ <link rel="stylesheet" href="feuilles_style/stylePages.css" /> 
+ <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"> </script> <!-- pour pouvoir utiliser des icons( de site :https://fontawesome.com/ ) -->
+  
+       <!-- quand l apprenti clique sur le bouton suivant,il sera rederigé vers le prochain chapitre (nouvelle page) -->
+           <script>
+		   <!-- 
+             function suivant()
+              {
+	            window.location='AllerPlusLoin.html';
+              }
+			 -->
+           </script>
+</head>
+ 
+<body > 
+<header>
+<h1 id="head_css">Passons au choses plus sérieuses ... Css</h1> 
+</header>
+
+<!-- menu general qui sera en commun entre plusieurs pages-->
+
+  <nav class="navbar">
+       
+	 <ul class="navbar-menu">
+        <li class="navbar-item logo">
+          <a href="#" class="navbar-link">
+            <span class="navbar-title">Aller à:</span>
+			
+         <!-- pour les icon j ai copié le code depuis ce site:	https://fontawesome.com/ -->
+            <i class="fas fa-chevron-right navbar-icon"></i>
+          </a>
+        </li>
+				
+        <li class="navbar-item">
+          <a href="index.html" class="navbar-link">
+            <i class="fas fa-home navbar-icon"></i>
+            <span class="navbar-title">Accueil</span>
+          </a>
+        </li>
+      
+	    <li class="navbar-item">
+          <a href="intro.html" class="navbar-link">
+            <i class="fas fa-code navbar-icon"></i>
+            <span class="navbar-title">Introduction</span>
+          </a>
+        </li>
+		
+		 <li class="navbar-item">
+          <a href="HTML.html" class="navbar-link">
+		  <i class="fab fa-html5 navbar-icon"></i>
+            <span class="navbar-title">Balises HTML</span>
+          </a>
+        </li>
+		
+        <li class="navbar-item">
+          <a href="CSS.html" class="navbar-link">
+		  <i class="fab fa-css3 navbar-icon"></i>
+            <span class="navbar-title">CSS</span>
+          </a>
+        </li>
+        <li class="navbar-item">
+          <a href="AllerPlusLoin.html" class="navbar-link">
+            <!-- <i class="fas fa-user navbar-icon"></i> -->
+			<i class="fas fa-graduation-cap navbar-icon"></i>
+            <span class="navbar-title">Aller plus loin</span>
+          </a>
+        </li>
+        <li class="navbar-item">
+          <a href="Quiz.html" class="navbar-link">
+            <i class="fas fa-tasks navbar-icon"></i>
+		   <span class="navbar-title">Quiz</span>
+		   <i class="fas fa-trophy navbar-icon  navbar-title "></i>   
+          </a>
+        </li>
+      </ul>
+  </nav>
+
+
+
+
+<!-- sommaire interne -->
+
+<nav class="nav_interne">
+ <ul>
+   	   <li> <a href="#PropText"> Mise en forme du texte </a> </li>
+       <li> <a href="#PropColor">Couleur et de fond </a> </li>
+       <li><a href="#PropBoite" >Propriétés des boîtes</a> </li>
+       <li><a href="#PropAffich" >Positionnement </a> </li>
+       <li> <a href="#PropList" >Propriétés des listes</a> </li>
+       <li> <a href="#PropTab" >Propriétés des tableaux </a> </li>
+       <li><a href="#ListAttribut" >Liste attributs HTML</a> </li>
+        	
+</ul>	
+</nav>
+
+
+
+
+<main id="main_css">
+
+<section id="PropText">
+<h2>Propriétés de mise en forme du texte</h2>
+  <p>
+    Enfin, nous y voilà,
+    ici la plupart des propriétés de mise en forme du texte.
+    Qu'est-ce que la mise en forme de texte ? C'est tout ce qui touche à la présentation du texte proprement dit : le gras, l'italique, le souligné, la police, l'alignement, etc
+  </p>
+
+<table class="tabl_CSS">
+
+<thead>
+<tr><th>Balise</th><th>Valeurs(exemples)</th><th>Description</th></tr>
+</thead>
+
+<tbody>
+<tr><td>font-family</td><td>police1, police2, police3, serif, sans-serif, monospace</td><td>Nom de police</td></tr>  
+<tr><td>@font-face</td><td>Nom et source de la police</td><td>Police personnalisée</td></tr>  
+<tr><td>font-size</td><td>1.3em, 16px, 120%...</td><td>Taille du texte</td></tr>  
+<tr><td>font-weight</td><td>bold, normal</td><td>Gras</td></tr>  
+<tr><td>font-style</td><td>italic, oblique, normal</td><td>Italique</td></tr>  
+<tr><td>text-decoration</td><td>underline, overline, line-through, blink, none</td><td>Soulignement, ligne au-dessus, barré ou clignotant</td></tr>  
+<tr><td>text-transform</td><td>capitalize, lowercase, uppercase</td><td>Capitales</td></tr>  
+<tr><td>font</td><td>-</td><td>Super propriété de police. Combine : font-weight  , font-style  , font-size  , font-variant  , font-family </td></tr>  
+<tr><td>text-align</td><td>left, center, right, justify</td><td>Alignement horizontal</td></tr>  
+<tr><td>vertical-align</td><td>baseline, middle, sub, super, top, bottom</td><td>Alignement vertical (cellules de tableau ou éléments inline-block  uniquement)</td></tr>  
+<tr><td>text-shadow</td><td>5px 5px 2px blue(horizontale, verticale, fondu, couleur)</td><td>Ombre de texte</td></tr>  
+
+</tbody>
+</table>
+</section>
+
+<section id="PropColor">
+<h2>Propriétés de couleur et de fond</h2>
+
+<table class="tabl_CSS">
+
+<thead>
+<tr><th>Balise</th><th>Valeurs(exemples)</th><th>Description</th></tr>
+</thead>
+
+<tbody>
+<tr><td>color</td><td>nom,rgb(rouge,<br>vert,bleu),<br>rgba(rouge,bleu)</td><td>Couleur du<br> texte</td></tr>  
+<tr><td>background-color</td><td>Identique à color</td><td>Couleur de<br> fond</td></tr>  
+<tr><td>background-image</td><td>url('image.png')</td><td>Image de<br> fond</td></tr>  
+<tr><td>background-attachment</td><td>fixed, scroll </td><td>Fond fixe</td></tr>  
+<tr><td>background-repeat</td><td>repeat-x, repeat-y,<br> no-repeat, repeat</td><td>Répétition du<br> fond</td></tr>  
+<tr><td>background-position</td><td>(x y), top, <br>center, bottom, <br>left, right</td><td>Position du<br> fond</td></tr>  
+<tr><td>opacity</td><td>0.5</td><td>Transparence</td></tr>  
+</tbody>
+</table>
+</section>
+
+
+<section id="PropBoite">
+<h2>Propriétés des boîtes</h2>
+
+
+<table class="tabl_CSS">
+
+<thead>
+<tr><th>Balise</th><th>Valeurs(exemples)</th><th>Description</th></tr>
+</thead>
+
+<tbody>
+<tr><td>width</td><td>50px, 80%...</td><td>Largeur</td></tr>  
+<tr><td>clear</td><td>150px, 80%...</td><td>Hauteur</td></tr>  
+<tr><td>min-width</td><td>150px, 80%...</td><td>Largeur minimale</td></tr>  
+<tr><td>max-width</td><td>150px, 80%...</td><td>Largeur maximale</td></tr>  
+<tr><td>min-height</td><td>150px, 80%...</td><td>Hauteur minimale</td></tr>  
+<tr><td>max-height</td><td>150px, 80%...</td><td>Hauteur maximale</td></tr>  
+<tr><td>margin-top</td><td>25px</td><td>Marge en haut</td></tr>  
+<tr><td>margin-bottom</td><td>25px,14%</td><td>Marge en bas</td></tr>  
+<tr><td>margin-left</td><td>15px,10%.</td><td>Marge à gauche</td></tr>  
+<tr><td>margin-right</td><td>5px,22%;</td><td>Marge à droite</td></tr>  
+<tr><td>padding</td><td>23px 5px 23px 5px (haut, droite, bas, gauche)</td><td>Super-propriété de marge intérieure.Combine : padding-top  , padding-right  , padding-bottom  , padding-left  .</td></tr>  
+<tr><td>border-style</td><td>solid, dotted, dashed, double, groove, ridge, inset, outset</td><td>Type de bordure</td></tr>  
+<tr><td>border</td><td>3px solid black</td><td>Super-propriété de bordure. Combine ,border-width  , border-color  , border-style  .
+Existe aussi en versionborder-top  , border-right  , border-bottom  , border-left </td></tr>  
+<tr><td>border-radius</td><td>5px</td><td>Bordure arrondie</td></tr>  
+<tr><td>box-shadow</td><td>6px 6px 0px black(horizontale, verticale, fondu, couleur)</td><td>Ombre de boîte</td></tr> 
+</tbody>
+</table>
+</section>
+
+
+
+<section id="PropAffich">
+<h2>Propriétés de positionnement et d'affichage</h2>
+<table class="tabl_CSS">
+
+<thead>
+<tr><th>Balise</th><th>Valeurs(exemples)</th><th>Description</th></tr>
+</thead>
+
+<tbody>
+<tr><td>display</td><td>block, inline, inline-block, table, table-cell, none...</td><td>Type d'élément ( block  , inline  , inline-block  , none  …)</td></tr>  
+<tr><td>visisbility</td><td>visible, hidden</td><td>visibilité</td></tr>  
+<tr><td>clip</td><td>rect (0px, 60px, 30px, 0px)rect (haut, droite, bas, gauche)</td><td>Affichage d'une partie de l'élément</td></tr>  
+<tr><td>overflow</td><td>auto, scroll, visible, hidden</td><td>Comportement en cas de dépassement</td></tr>  
+<tr><td>float</td><td>left, right, none</td><td>Flottant</td></tr>  
+<tr><td>clear</td><td>left, right, both, none</td><td>Arrêt d'un flottant</td></tr>  
+</tbody>
+</table>
+</section>
+
+
+
+
+<section id="PropList">
+<h2>Propriétés des listes</h2>
+<table class="tabl_CSS">
+
+<thead>
+<tr><th>Balise</th><th>Valeurs(exemples)</th><th>Description</th></tr>
+</thead>
+
+<tbody>
+<tr><td>list-style-type</td><td>disc, circle, square, decimal, lower-roman, upper-roman, lower-alpha, upper-alpha, none</td><td>Type de liste</td></tr>  
+<tr><td>list-style-position</td><td>inside, outside</td><td>Position en retrait</td></tr>  
+<tr><td>list-style-image</td><td>url('puce.png')</td><td>Puce personnalisée</td></tr>  
+<tr><td>list-style</td><td>- </td><td>Super-propriété de liste. Combine list-style-type  , ,list-style-position  , list-style-image  .</td></tr>  
+</tbody>
+</table>
+</section>
+
+<section id="PropTab">
+<h2>Propriétés des tableaux</h2>
+<table class="tabl_CSS">
+
+<thead>
+<tr><th>Balise</th><th>Valeurs(exemples)</th><th>Description</th></tr>
+</thead>
+
+<tbody>
+<tr><td>border-collapse</td><td>collapse, separate</td><td>Fusion des bordures</td></tr>  
+<tr><td>empty-cells</td><td>hide, show</td><td>Affichage des cellules vides</td></tr>  
+<tr><td>caption-side</td><td>bottom, top</td><td>Position du titre du tableau</td></tr>  
+</tbody>
+</table>
+</section>
+
+
+
+
+<section id="ListAttribut">
+<h2>Liste attributs HTML</h2>
+
+<p>
+   Les attributs sont un peu les options des balises. Ils viennent les compléter pour donner des informations supplémentaires. 
+   L'attribut se place après le nom de la balise ouvrante et a le plus souvent une valeur, comme ceci :&lt;balise attribut=&quot;valeur&quot;&gt;
+   Chaque élément HTML peut avoir un ou plusieurs attributs. Ces attributs sont des valeurs supplémentaires qui permettent de configurer les éléments ou d'adapter leur comportement.
+</p>
+
+<table class="tabl_CSS">
+<thead>
+<tr><th>Nom de l'attribut</th><th>Éléments auxquels il s'applique</th><th>Description</th></tr>
+</thead>
+<tbody>
+<tr><td>align</td><td>&lt;applet&gt; &lt;caption&gt; &lt;colgroup&gt; &lt;hr&gt;&lt;img&gt;&lt;table&gt;&lt;tbody&gt;&lt;td&gt;&lt;tfoot&gt;&lt;th&gt;&lt;thead&gt;&lt;tr&gt; </td><td>Cet attribut définit l'alignement horizontal de l'élément.</td></tr>  
+<tr><td>alt</td><td>&lt;img&gt;&lt;area&gt;</td><td>Un texte alternatif à afficher lorsque l'élément ne peut pas être affiché</td></tr>  
+<tr><td>background</td><td> &lt;body&gt;&lt;table&gt;&lt;td&gt;&lt;th&gt;</td><td>Définit l'URL vers un fichier qui est une image. </td></tr>  
+<tr><td>border</td><td>&lt;img&gt;&lt;table&gt;</td><td>Cet attribut indique la largeur de la bordure.</td></tr>  
+<tr><td>charset</td><td> &lt;meta&gt;&lt;script&gt;</td><td>Cet attribut déclare l'encodage de caractères utilisé pour la page ou le script. </td></tr>  
+<tr><td>class</td><td>Attribut universel</td><td>Cet attribut permet de définir la ou les classes auxquelles appartient un élément afin de le manipuler en script ou de le mettre en forme avec CSS.</td></tr>  
+<tr><td>id</td><td>	Attribut universel  </td><td>Cet attribut permet d'identifier un élément d'un document de façon unique  </td></tr>  
+<tr><td>color</td><td>&lt;font&gt;,&lt;hr&gt;</td><td>Cet attribut définit la couleur du texte grâce à un nom de couleur ou grâce à un code hexadécimal dans le format #RRGGBB.  </td></tr>  
+<tr><td>colspan</td><td>&lt;td&gt;&lt;th&gt;</td><td>Cet attribut définit le nombre de colonnes sur lequel une cellule doit s'étendre.</td></tr>  
+<tr><td>download</td><td>&lt;a&gt;&lt;area&gt;</td><td>Cet attribut indique si l'hyperlien est utilisé afin de télécharger une ressource.</td></tr>  
+<tr><td>height</td><td>&lt;img&gt;&lt;video&gt;</td><td>Pour ces éléments, cet attribut définit la hauteur occupée par l'élément. Pour les autres éléments, on utilisera height property.
+<tr><td>width</td><td>&lt;img&gt;&lt;video&gt;</td><td> Pour ces éléments, cet attribut définit la largeur occupée sur l'écran.  </td></tr>  
+<tr><td>href</td><td>&lt;a&gt;,&lt;area&gt;&lt;base&gt;&lt;link&gt;</td><td>L'URL de la ressource liée.</td></tr>  
+<tr><td>rowspan</td><td> &lt;td&gt;&lt;th&gt;&lt;tr&gt;</td><td> Cet attribut définit le nombre de lignes sur lesquelles une cellule doit s'étendre. </td></tr>  
+<tr><td>rows</td><td>&lt;textarea&gt;</td><td>Cet attribut définit le nombre de lignes pour la zone de texte.  </td></tr>  
+</tbody>
+</table>
+</section>
+
+<div id="div_svt">
+     <a onclick="suivant()" id="nxt"   alt="Aller au suivant" >S'Entrainer !!!  </a>
+</div>
+</main>
+
+<!-- On a 3 blocs dans la partie de footer  -->
+<footer>
+
+        <div class="footer-right">
+			  	
+				<label> S'abonner:</label><br>
+				<!-- enterer l email de l apprenti s il veut s'abonner -->
+				<input type="email" placeholder="Entrez votre e-mail"></input>
+				
+				
+				<!-- pour le contact, j ai utilisé cette partie -->
+				<div class="footer-icons">
+				<br>
+					<a href="#"><i class="fab fa-facebook ReseauxSoc"></i></a>
+					<a href="#"><i class="fab fa-twitter ReseauxSoc"></i></a>
+					<a href="#"><i class="fab fa-instagram ReseauxSoc"></i></a>
+					<a href="#"><i class="fab fa-linkedin ReseauxSoc"></i></a>
+					<a href="#"><i class="fab fa-youtube ReseauxSoc"></i></a>
+				</div>
+		</div>
+      
+	  <!-- cette partie pour donner un apperçu general sur la formation présentée -->
+	    <div class="footer-left">
+          <img id="picture" src="images/icon.png">
+				<p>A propos de site:</p>
+
+				
+				<p>Site d'apprentissage de html5 et css3</p>	
+				
+
+				<span id="hg">  ©2021 Programming with BELKACEMI-TECH.</span>
+			</div>
+
+
+ <!-- cette partie est consacréé pour ecrire qlq de mes coordonnées(num tel ,adresse et mon adresse email) au cas ou qlq un veut me laisser un commentaire ou me contacter -->
+	<div class="footer-center">
+		
+		<div>
+			<i class="fa fa-map-marker"></i>
+			 <span>Alger_Bab Ezzouar</span>
+		</div>		
+		
+      <br>
+		
+		<div>
+			<i class="fa fa-phone"></i>
+			  05 41 75 17 04
+		</div>
+		
+		<br>
+		<div>
+			<i class="fa fa-envelope"></i>
+			<a href="Tech.Belkacemi@gmail.com">malha.belkacemi24@gmail.com</a>
+		</div>
+	</div>	
+	
+</footer>
+
+</body>
+</html>

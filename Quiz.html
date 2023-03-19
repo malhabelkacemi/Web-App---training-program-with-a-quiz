@@ -1,0 +1,192 @@
+
+<!DOCTYPE html> <!-- Pour dire qu'il s'agit d'une page web html-->
+<head>
+   <meta charset="UTF-8" lang="fr" >
+   <title>Jouer au Quiz </title>
+     <link rel="stylesheet" href="feuilles_style/QuizStyle.css" />  
+	 
+ <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"> </script>
+</head>
+ 
+ <body>  
+  <header>
+   <div class="loader" > 
+     <span class="lettre">Q</span>
+     <span class="lettre">U</span>
+     <span class="lettre">I</span>
+     <span class="lettre">Z</span>
+    </div>
+  </header>
+	
+	
+<div id="start">	
+ 
+    <div id="enonce">
+	   <img id="cercle" src="images/quiz_time.jpg" alt="quiz time" /> 
+          
+	    <div id="paragr">
+        <p> <strong>MERCI cher apprenti </strong> d'avoir parcouru ce chemin de connaissances... si vous`etes arrivé jusqu'au là c'est parceque vous avez suivi les cours de HTML et CSS présentés au cours de cette formation. 
+              Maintenant vous voulez savoir si vous avez bien assimiler les informations; pour se faire vous n'avez qu'a vous évaluer vous meme en repondant à un quiz.
+              <br>
+               Le but de ce quiz  est de répondre correctement à 10 questions avant que le temps s'écoule (15 secondes).
+              <br>
+              Pour chaque question, je vous propose plusieurs énoncés de réponses possibles (choix 1, 2, 3 ou plus). 
+              Pour répondre aux questions, vous devez cliquez sur la proposition qui vous semble correcte. 
+			  Si vous zappez une question , elle sera comptabiliser comme réponse fausse.
+              <br>BONNE CHANCE!!
+  	   </p> 
+       </div>
+	</div>
+ 
+    <div id="demarrer">
+      <span>Cliquez sur ce bouton pour commencer le quiz... <img src="images/start.jpg" onclick="commencer_quiz()" id="btn" height="110"  alt="commencer le quiz" />
+	   
+    </span>
+	   </div>
+   
+</div>
+
+<!-- le timer -->
+<div id="titre">
+     <h3> Ce quiz se terminera dans <span id="compteur">15</span>seconde(s)...  
+     </h3> 
+</div>
+
+
+<!-- bloc pour les questions et leurs numèros et les propositions suggerées   -->
+<div class="quiz_box">
+   
+    <div class="question_number"></div><img  src="images/h3.gif" id="sablier"  height="90"  alt="sablier" />	 	
+	<div class="question_txt"></div>	
+	<div class="options"></div>	
+  
+	  <img src="images/svt11.jpg" onclick="next()" id="nxt" height="60"  alt="Aller au suivant" />
+    
+     <div class="indicateurs_Reponses"> </div>
+
+</div>
+
+
+
+<div class="resultat" >
+  
+  
+<div id="Res">
+          <figcaption><h3>Résultat de quiz est comme suit:</h3></figcaption>
+	 
+	<!-- Un tableau pour afficher le résultat de quiz et le score final de l'apprenti -->
+	<table> 
+      <tr>
+          <th>Total questions </th>
+          <td> <span class="total_qst"> </span></td>
+      </tr>
+      
+      <tr>
+          <th>Total correct </th>
+          <td> <span class="Nbr_correct"> </span></td>
+      </tr>
+      <tr>
+          <th>Total faux </th>
+          <td> <span class="Nbr_wrong"> </span></td>
+      </tr>
+      <tr>
+          <th>Total score </th>
+          <td> <span class="score"> </span></td>
+      </tr>   
+    </table>  
+
+</div>
+
+<div id="boutons" height="5">
+
+<p class="image">
+    <img src="images/retry.jpg" onclick="Reessayer()" id="Reessayer" height="90"  alt="Réessayer" />
+    <span>Réessayer</span>
+</p>
+
+<p class="image">
+    <img  src="images/home.jpg" onclick="home()" id="home" height="90"  alt="Accueil" />
+    <span>Aller à l'accueil</span>
+</p>
+
+<p class="image">
+    <img src="images/attest2.jpg" onclick="certificat()" id="btn_certificat" height="90"  alt="Certificat de réussite" />
+    <span>Obtenir votre certificat de réussite</span>
+</p>
+
+
+</div>
+
+</div>
+
+<script  src="js/questions.js"></script>
+<script  src="js/application.js"></script>
+
+
+
+<!-- On a 3 blocs dans la partie de footer  -->
+<footer>
+
+        <div class="footer-right">
+			  	
+				<label> S'abonner:</label><br>
+				<!-- enterer l email de l apprenti s il veut s'abonner -->
+				<input type="email" placeholder="Entrez votre e-mail"></input>
+				
+				
+				<!-- pour le contact, j ai utilisé cette partie -->
+				<div class="footer-icons">
+				<br>
+					<a href="#"><i class="fab fa-facebook ReseauxSoc"></i></a>
+					<a href="#"><i class="fab fa-twitter ReseauxSoc"></i></a>
+					<a href="#"><i class="fab fa-instagram ReseauxSoc"></i></a>
+					<a href="#"><i class="fab fa-linkedin ReseauxSoc"></i></a>
+					<a href="#"><i class="fab fa-youtube ReseauxSoc"></i></a>
+				</div>
+		</div>
+      
+	  <!-- cette partie pour donner un apperçu general sur la formation présentée -->
+	    <div class="footer-left">
+          <img id="picture" src="images/icon.png">
+				<p>A propos de site:</p>
+
+				
+				<p>Site d'apprentissage de html5 et css3</p>	
+				
+
+				<span id="hg">  ©2021 Programming with BELKACEMI-TECH.</span>
+			</div>
+
+
+ <!-- cette partie est consacréé pour ecrire qlq de mes coordonnées(num tel ,adresse et mon adresse email) au cas ou qlq un veut me laisser un commentaire ou me contacter -->
+	<div class="footer-center">
+		
+		<div>
+			<i class="fa fa-map-marker"></i>
+			 <span>Alger_Bab Ezzouar</span>
+		</div>		
+		
+      <br>
+		
+		<div>
+			<i class="fa fa-phone"></i>
+			  05 41 75 17 04
+		</div>
+		
+		<br>
+		<div>
+			<i class="fa fa-envelope"></i>
+			<a href="Tech.Belkacemi@gmail.com">malha.belkacemi24@gmail.com</a>
+		</div>
+
+	</div>
+		
+	
+</footer>
+
+
+
+
+
+</body>
+</html>

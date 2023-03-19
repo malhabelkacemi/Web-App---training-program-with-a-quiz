@@ -1,0 +1,198 @@
+
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8" lang="fr" >
+<title>Index</title>
+
+  <!-- la feuille de style -->
+ <link rel="stylesheet" href="feuilles_style/IndexStyle.css" /> 
+ 
+ <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"> </script> <!-- pour pouvoir utiliser des icons( de site :https://fontawesome.com/ ) -->
+<script >
+  
+// Fonction de défilement verticale des images
+function defilImgVrt(el,srcs,pas,tps) {
+  if(typeof el=="string") { el = document.getElementById(el); }
+  var tps = tps || 15; //pour la rapidité
+  var pas = pas || 1;
+  var imgs = [];
+  var offset = 0;
+  for(var i=0,l=srcs.length;i<l;i++) {
+    var img = new Image();
+    img.src = srcs[i];
+    imgs.push(img);
+    img.style.width=el.offsetWidth+"px";
+    img.style.position = "absolute";
+    img.style.top = offset+"px";
+    el.appendChild(img);
+    offset += img.offsetHeight;
+  }
+  var first = 0;
+  var last = imgs.length-1;
+  (function d() {
+    for(var i=0,l=imgs.length;i<l;i++) {
+      var top = parseInt(imgs[i].style.top,10);
+      imgs[i].style.top = (top-pas)+"px";
+      if(i==first && (top-pas+imgs[i].offsetHeight)<0) {
+        imgs[i].style.top = (parseInt(imgs[last].style.top,10)+imgs[last].offsetHeight-(i==0?pas:0))+"px";
+        last = first++;
+        if(first>imgs.length-1) { first = 0; }
+      }
+    }
+    setTimeout(d,tps);
+  })();
+  
+ 
+}
+
+ //appeller la fct
+ window.onload=function() {
+  defilImgVrt('bandeau_vertical',[
+  //les images à defilées dans le bloc à droite 
+    "images/im5.jpg",
+    "images/icon.jpg",
+    "images/chevron.png",
+    "images/html_css.jpg",
+    "images/im1.jpg",
+    "images/quiz_time.jpg"
+  
+      ]);
+	  
+	 defilImgVrt('bandeau_vertical2',[
+    //les images à defilées dans le bloc à gauche 
+	"images/im2.jpg",
+    "images/im7.jpg",
+    "images/web.jpg",
+	"images/quiz1.jpg",
+	"images/quiz.jpg",
+	"images/attest2.jpg"
+      ]); 
+	  }
+	  
+	
+ 
+</script>
+   </script>
+</head>
+ 
+<body > 
+
+
+<header>
+     <!-- inserer un logo pour ce site -->
+     <h1> <figcaption>  <img id="logo" src="images/icon.png" height="120" alt="logo" >  </figcaption> Apprenez à créer votre site web avec html 5 et css3  </h1> 
+</header>
+ 		 
+
+<!-- le menu de site => un menu horizontal -->
+<nav>
+   <ul>
+    <li> <a href="intro.html">Introduction</a> </li>
+    <li> <a href="HTML.html">HTML</a> </li>
+    <li> <a href="CSS.html">CSS</a> </li>
+    <li> <a href="AllerPlusLoin.html">Aller plus loin</a> </li>
+    <li> <a href="Quiz.html">Quiz</a> </li>
+   </ul>
+</nav>
+
+
+<!-- pour le bloc main,il est composé de 3 sections, 2 pour le défilement d images et l autre poour presenté le site   -->
+<main>
+  <!-- la 1 ere section pour le texte -->
+    
+    <section id="section1" >
+       <header><h3>        
+              Votre avenir commence ici,prenez votre carrière en main!! </h3>
+        </header>
+  
+     <div id="sect"> 
+      <p>
+        Vous souhaitez créer vos propres sites web ? Vous êtes au bon endroit ! Grace à notre formation enligne, vous apprendrez comment utiliser HTML5 et CSS3, 
+        les deux outils indisponsable à la base de tous les sites web.
+        Vous pensez peut-être que vous n'êtes pas capable d'apprendre un langage informatique, mais ne vous inquiétez pas : HTML et CSS sont des langages simples,
+        que nous allons découvrir pas à pas. Vous serez bientôt capable de créer vos propres sites grace à cette formation gratuite.
+         Pour cette formation vous n'aurez pas besoin de prérequis; Alors, prêt à réaliser un site web de A à Z ?
+         <br>
+         <span id="txt"> Attachez vos ceintures, et démarrons tous ensemble!! </span> <br>
+         <img id="start" src="images/h1.gif" height="190"  alt="demarrer" >
+      </p>
+     </div> 
+    </section>
+
+      <!-- la 2 eme section pour le defilement d images -->
+     <section id="section2">
+       <div id="bandeau_vertical"></div>
+     </section>
+
+       <!-- la 3 eme section pour le defilement d images  aussi--> 
+     <section id="section3">
+        <div id="bandeau_vertical2"> </div>
+     </section>
+
+</main>
+
+
+<!-- On a 3 blocs dans la partie de footer  -->
+<footer>
+
+        <div class="footer-right">
+			  	
+				<label> S'abonner:</label><br>
+				<!-- enterer l email de l apprenti s il veut s'abonner -->
+				<input type="email" placeholder="Entrez votre e-mail"></input>
+				
+				
+				<!-- pour le contact, j ai utilisé cette partie -->
+				<div class="footer-icons">
+				<br>
+					<a href="#"><i class="fab fa-facebook ReseauxSoc"></i></a>
+					<a href="#"><i class="fab fa-twitter ReseauxSoc"></i></a>
+					<a href="#"><i class="fab fa-instagram ReseauxSoc"></i></a>
+					<a href="#"><i class="fab fa-linkedin ReseauxSoc"></i></a>
+					<a href="#"><i class="fab fa-youtube ReseauxSoc"></i></a>
+				</div>
+		</div>
+      
+	  <!-- cette partie pour donner un apperçu general sur la formation présentée -->
+	    <div class="footer-left">
+          <img id="picture" src="images/icon.png">
+				<p>A propos de site:</p>
+
+				
+				<p>Site d'apprentissage de html5 et css3</p>	
+				
+
+				<span >  ©2021 Programming with BELKACEMI-TECH.</span>
+			</div>
+
+
+ <!-- cette partie est consacréé pour ecrire qlq de mes coordonnées(num tel ,adresse et mon adresse email) au cas ou qlq un veut me laisser un commentaire ou me contacter -->
+	<div class="footer-center">
+		
+		<div>
+			<i class="fa fa-map-marker"></i>
+			 <span>Alger_Bab Ezzouar</span>
+		</div>		
+		
+      <br>
+		
+		<div>
+			<i class="fa fa-phone"></i>
+			  05 41 75 17 04
+		</div>
+		
+		<br>
+		<div>
+			<i class="fa fa-envelope"></i>
+			<a href="Tech.Belkacemi@gmail.com">malha.belkacemi24@gmail.com</a>
+		</div>
+
+	</div>
+		
+	
+</footer>
+
+
+
+</body>
+</html>
