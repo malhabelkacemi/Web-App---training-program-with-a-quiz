@@ -1,0 +1,733 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+*{box-sizing: border-box;}
+
+body{
+    margin:auto; 
+    background-color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* l  entete de la page quiz */
+header
+{
+	 background-image:url("../images/pl5.jpg");
+
+}
+/* pour le bouton commencer pour demarrer le quiz */
+#demarrer
+{
+	text-align:center;
+	margin-top:3%;
+	margin-left:40%;
+	
+}
+
+
+#demarrer span{
+	float:left;
+	padding-top:1%;
+    font-size:24px;
+	font-weight:bolder;
+	font-family:"Geneva";
+	margin-right:1%;	
+	text-shadow: 18px 13px 21px blue;
+	color:purple;
+}
+#demarrer img{
+	margin-top:0%;
+	width:18%;
+	float:right;
+}
+
+
+/* bouton commencer */
+#btn
+{
+	background-color: white;
+	width:10%;
+	padding:2%;
+	border-radius: 5px;
+	
+    
+}
+/* pour l enoncé (le grand paragraphe) */
+#paragr
+{
+	padding-top:18px;
+	padding-right:20px;
+	font-size:21px;
+	font-family:"Geneva";
+
+}
+
+/* une fois terminer de repondre au quiz, un tableau  de resultat sera afficher (le nbr de reponses correct et fausses auquelles l apprenti a repondu et son score final  */
+
+.resultat {
+	margin-bottom:3%;
+	margin-top:1%;
+	visibility:hidden; /* Initialement le tableau sera caché, il n apparaitera que si le temps est écoulé ou si l apprenti a fini son quiz */
+	margin-left:3%;
+}
+
+/* le tableau */
+.resultat table{
+	border-collapse:collapse;
+	width:80%;
+	 background-image:url("../images/pl7.jpg");
+}
+
+
+h3{
+margin-left:18%;
+font-family:Geneva;
+}
+
+
+/* les cases des tableau  */
+.resultat th ,td {
+	
+	border:2px solid blue;
+	padding:10px;
+	text-align:center;
+    font-weight:bolder;
+	/* color:white; */
+}
+
+.resultat th 
+{		
+	width:57%;
+}
+
+#Res
+{
+	margin-left:25%;
+    margin-right:10%;
+
+}
+
+/* pour le bloc de boutons accueil,réessayer,obtenir son certficat de réussite  */
+#boutons
+{
+	
+	/* margin-left:41%; */
+    margin-left:29%;
+	margin-top:2%;
+
+}
+
+.image{
+    clear:both;
+    display: inline;
+}
+
+.image span{
+	margin-top:5%;
+    visibility: hidden;
+	width:40%;
+	display: inline;
+	
+}
+ 
+.image img:hover + span {
+    visibility: visible;
+	color:purple;
+	font-size:20px;
+	font-style:italic;
+}
+
+
+
+
+/* pour les boutons */
+#btn,#nxt,#Reessayer,#btn_certificat,#home{  
+	width:10%;
+    border:none;
+    cursor:pointer;
+    border-radius: 60px;
+  	text-align:center;	
+	margin:1%;
+	margin-right:3%;
+	background-repeat:no-repeat;
+	
+}
+
+/* bouton suivant */
+#nxt{
+	
+    background:transparent;
+	width:28%;
+	border-radius: 5px;
+	margin-bottom:0%;
+	margin-bottom:2%;	 
+    margin-left:34%;
+}
+
+
+/* pour l image quiz time  */
+#cercle
+{
+    width:30%;
+	height:25%;
+	border-radius: 50%;
+    float:left;
+	shape-outside :ellipse() ;
+    margin-left:1%;
+    margin-right:0.8%;
+    margin-top:1%;
+}
+
+
+
+/* pour la partie du bouton commencer et le timer */
+#start
+{		
+	margin-left:3%;
+	margin-right:5%;	
+	padding-bottom:8%;
+	margin-top:4%;
+}
+
+
+
+/* Regles de quiz  */
+#enonce
+{
+	text-align:justify;   
+}
+
+
+
+#titre
+{
+	visibility:hidden;
+	margin-left:35%;
+	width:50%;
+	
+}
+
+
+/* pour l animation qui est dans header  */
+header .loader
+{
+	width:70%;
+	
+	margin-bottom:2%;
+	padding:1%;
+	margin-left:13%;
+	text-align:center;
+	}
+	
+	
+	
+/* pour animer les lettres de "QUIZ" */
+.lettre
+{
+	color:red;
+	font-size:70px;
+	letter-spacing:15px;
+	font-weight: bolder ;
+	font-family:'Lucida Handwriting','Lucida Bright';
+	font-style:italic;
+	animation:flash 0.9s linear infinite;
+
+}
+
+@keyframes flash{
+0% 
+{
+  color:blue;
+	text-shadow: 18px 13px 21px green;
+}
+
+90% 
+{
+    color:black;
+ 	text-shadow: 18px 13px 41px blue;
+}
+
+100% 
+{
+   color:red;
+  text-shadow:2px 1px 0 green;
+}
+}
+
+
+/* Chaque lettre aura un delai d animation */
+.lettre:nth-child(1){ animation-delay:0.1s;}
+.lettre:nth-child(2){ animation-delay:0.2s;}
+.lettre:nth-child(3){ animation-delay:0.3s;}
+.lettre:nth-child(4){ animation-delay:0.4s;}
+.lettre:nth-child(5){ animation-delay:0.5s;}
+.lettre:nth-child(6){ animation-delay:0.6s;}
+.lettre:nth-child(7){ animation-delay:0.7s;}
+.lettre:nth-child(8){ animation-delay:0.8s;}
+.lettre:nth-child(9){ animation-delay:0.9s;}
+.lettre:nth-child(10){ animation-delay:1s;}
+
+.fondu {
+
+transition:opacity 0.9s ease-out;
+}
+
+
+
+
+/*  quiz_box pour le conteneur de quiz (le num de qst + l enoncé de la qst et ses propositions */
+.quiz_box{
+    max-width: 700px;
+    min-height: 500px;
+    background-color: white;
+    margin: 30px auto;
+    border-radius: 8px;
+	margin-top:1%;
+    padding: 30px;
+	box-shadow: 10px 8px 8px 10px rgb(73,73,73) ;
+	visibility:hidden;
+	background-image:url("../images/pl6.jpg");
+	
+}
+
+#sablier
+{
+	float:right;
+	border-radius:50px;
+	margin:0;
+	
+}
+
+/* numero de qst */
+.question_number  {
+	float:left;
+	font-size:28px;
+	font-family:
+	font-family:'Lucida Handwriting','Lucida Bright';
+	font-style:italic;
+	font-weight:bolder;
+    color:rgb(0,119,119);
+    border-bottom: 1px solid #ccc;
+    margin: 0;
+    padding-bottom: 10px;
+	/* text-shadow: 8px 3px 4px blue; */
+
+}
+
+/* l enoncé (texte) de la question de quiz  */
+.question_txt {
+	clear:both;
+    font-size: 24px;
+    color: black;
+    padding:15px 0;
+    margin-bottom: 20px;
+}
+
+
+
+/* les propositions de qst... chaque proposition est dans un div (par création dynamique en javascript)*/
+.options div{ 
+ 
+   background-color: rgb(120,120,120);
+    font-size: 20px;   
+    margin-bottom: 10px;
+	position: relative;
+    padding:14px;
+    cursor: pointer;
+   border-radius:10px;
+   text-align:center;
+   margin-left:12%;
+   margin-right:12%;
+   overflow:hidden;
+	animation:fadeIn 0.3s ease forwards;
+	
+
+}
+.options div:hover
+{
+	
+	background-color:rgb(0,113,113);
+}
+
+.choix{
+	margin-left:8%;
+	margin-right:8%;
+	text-align:center;
+}
+
+/* pour les reponses correctes la couleur de div de la proposition selectionnée va basculer au vert  */
+.options .choix.correcte::before
+{
+	content:'';
+	position:absolute;
+	left:0;
+	top:0;
+	height:100%;
+	width:100%;
+	background-color:green;
+	z-index:-1;	
+}
+
+
+
+/* pour les reponses fausses la couleur de div de la proposition selectionnée va basculer au rouge  */
+.options .choix.faux::before
+{
+	content:'';
+	position:absolute;
+	left:0;
+	top:0;
+	height:100%;
+	width:100%;
+	background-color:red;
+	z-index:-1;
+	
+}
+
+/* quand on choisi une proposition on pourra plus selectionner une autre  */
+.options .choix.deja_repondu
+{
+	pointer-events:none;
+}
+
+@keyframes fadeIn{
+    0%{
+       opacity:0;
+      }
+    100% {
+       opacity:1;
+    }
+}
+
+
+
+
+
+/* pour la partie en bas , la ou on voit des div ronds ils servent à indiquer si la réponse que l'apprenti a choisi est correct ou non  */
+.indicateurs_Reponses
+{
+	border-top:1px solid red;
+	text-align:center;
+}
+
+
+
+.indicateurs_Reponses div
+{
+	height:40px;
+	width:40px;
+	display: inline-block;
+	background-color:gray;
+	border-radius:50%; /* arrondir les div */
+	margin-right:3px;
+	margin-top:8px;
+
+}
+
+/* dans le cas ou la reponse est correcte on insere une icon avec un arriere en vert  pour dire que c est correct*/
+.indicateurs_Reponses div.correcte
+{
+	background-color:green;
+	background-image:url("../images/correct.png");
+	background-size:50%;
+	background-repeat:no-repeat;
+	background-position:center;
+}
+
+
+/* dans le cas ou la reponse est fausse, on insere de meme une icon avec un arriere en rouge afin  d indiquer à l apprennti qu il a choisi la mauvaise reponse  */
+.indicateurs_Reponses div.faux
+{
+	background-color:red;
+	background-image:url("../images/wrong.png");
+	background-size:50%;
+	background-repeat:no-repeat;
+	background-position:center;
+}
+
+
+
+/* le bloc de pied de page */
+footer 
+{
+	
+ clear :both;
+  margin-top:5%;
+  font-family : Cooper Std Black;
+  width:auto;
+  margin-left:2%;
+  margin-right:2%;
+  padding:6%;
+  padding-top:2%;
+  padding-left:3%;
+  background-color:gray;
+  margin-bottom:4%;
+}
+
+/* pour la partie des reseaux sociaux */
+footer .ReseauxSoc
+{
+ background-position:center; 
+  color:blue;
+  font-size:30px;
+  margin-left:4px;
+  transition:var(--navbar-transition-speed);
+ 
+}
+
+
+
+
+/* la partie gauche de footer */
+.footer-left
+{
+     float:left;
+	margin-right:4%;
+    background-position:center; 
+}
+
+
+/* la partie au milieu de footer */
+.footer-center
+{
+	margin-top:6%;
+	margin-right:10%;
+    float:center;
+}
+
+/* la partie à droite de footer */
+.footer-right
+{
+	float:right;
+	margin-top:6%;
+	
+}
+
+
+
+.footer-right .footer-center .footer-left
+{
+ width:40%;
+ display: inline-block;
+}
+/* pour le logo de pied de page */
+#picture
+{
+	width:28%;
+    border-radius:50%;
+	height:90px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**************************** faire du responsive design : la page sera affichée verticalement dès que la largeur de l’écran sera moins de 640px ********************************/
+
+@media screen and (max-width: 640px)
+{
+header
+{
+	 background-image:url("../images/pl5.jpg");
+
+}
+/* pour le bouton commencer pour demarrer le quiz */
+#demarrer
+{
+	text-align:center;
+	margin-top:1%;
+	margin-left:20%;
+	
+}
+
+
+#demarrer span{
+	float:left;
+	padding-top:1%;
+    font-size:15px;
+	font-weight:bolder;
+	font-family:"Geneva";
+	margin-right:1%;
+	
+	text-shadow: 18px 13px 21px blue;
+	color:purple;
+}
+#demarrer img{
+	margin-top:0%;
+	width:16%;
+	float:right;
+	height:70px;
+	
+}
+
+/* pour l enoncé (le grand paragraphe) */
+#paragr
+{
+	padding-top:10px;
+	padding-right:18px;
+	font-size:16px;
+	font-family:"Geneva";
+
+}
+
+
+/* Regles de quiz  */
+#enonce
+{
+	text-align:justify;
+	margin-left:5%;
+	margin-right:5%;
+    
+}
+
+
+	
+
+/*  quiz_box pour le conteneur de quiz (le num de qst + l enoncé de la qst et ses propositions */
+.quiz_box{
+    max-width: 700px;
+    min-height: 500px;
+    background-color: white;
+    margin: 30px auto;
+	margin-left:5%;
+	margin-right:5%;
+    border-radius: 8px;
+	margin-top:1%;
+    padding: 30px;
+	box-shadow: 10px 8px 8px 10px rgb(73,73,73) ;
+	visibility:hidden;
+	 background-image:url("../images/pl6.jpg");
+	 
+	/* background-repeat:no-repeat; */
+	
+}
+
+
+/* numero de qst */
+.question_number  {
+	float:left;
+	font-size:21px;
+	font-family:font-family:'Lucida Handwriting','Lucida Bright';
+	font-style:italic;
+	font-weight:bolder;
+    color:rgb(0,119,119);
+    border-bottom: 1px solid #ccc;
+    margin: 0;
+    padding-bottom: 10px;
+	/* text-shadow: 8px 3px 4px blue; */
+
+}
+
+/* l enoncé (texte) de la question de quiz  */
+.question_txt {
+	clear:both;
+    font-size: 18px;
+    color: black;
+    padding:15px 0;
+    margin-bottom: 20px;
+}
+
+/* pour repositionner le titre de tbleau résultat */
+figcaption h3
+{
+ margin-left:5%;
+}
+
+/* pour le bloc de boutons accueil,réessayer,obtenir son certficat de réussite  */
+#boutons
+{
+    margin-left:21%; 
+	margin-top:2%;
+	
+}
+	
+#boutons img
+{
+  height:42px;
+}	
+
+#boutons span
+{
+	font-size:12px;
+}	
+	/* footer */
+footer 
+{
+	
+  clear :both;
+  font-family : Cooper Std Black;
+  width:auto;
+  padding:3%;
+  padding-top:3%;
+  padding-left:1%;
+  padding-bottom:0%;
+  
+  background-color:gray;
+  margin-bottom:5%;
+}
+
+/* pour la partie des reseaux sociaux */
+footer .ReseauxSoc
+{
+
+  color:blue;
+  font-size:18px;
+  /* margin-left:4px; */
+  transition:var(--navbar-transition-speed);
+ 
+}
+
+
+/* la partie gauche de footer */
+.footer-left
+{
+     float:left;
+}
+
+
+/* la partie au milieu de footer */
+.footer-center
+{
+	margin-top:6%;
+	margin-right:3%;
+    float:center;
+}
+
+/* la partie à droite de footer */
+.footer-right
+{
+	float:right;
+	margin-top:6%;
+	
+}
+
+
+
+.footer-right .footer-center .footer-left
+{
+ width:2%;
+ display: inline-block;
+}
+/* pour le logo de pied de page */
+#picture
+{
+	width:18%;
+    border-radius:50%;
+	height:60px;
+}
+
+	
+	
+}
+
+

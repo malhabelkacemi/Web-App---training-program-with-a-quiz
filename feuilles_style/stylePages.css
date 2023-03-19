@@ -1,0 +1,992 @@
+
+*{box-sizing: border-box;} 
+
+
+body
+{
+/* background-image: url('../images/bbody.png'); */
+background-image: url('../images/m2.jpg');
+}
+/* Pour le body de la page intoduction */
+#body_intro
+{
+  margin-left:3.5%;
+      
+}	
+
+
+/* Pour le header de la page intodution */
+#header1 
+{ 
+   margin-top:2%;
+   color:white;
+   font-style:italic;
+   padding:1%;   
+   margin-left:17%;
+   margin-right:26%;
+   text-align:center;
+   margin-bottom:7%;
+    box-shadow: 10px 3px 12px 12px gray; 
+    Background-image:url('../images/pl6.png');
+}	
+
+
+
+/* le header de la deuxieme page HTML */
+#header_html h1 
+{
+	text-align:center;
+	margin-left:18%;
+	width:58%;
+	padding:1%;
+	padding-bottom:2%;
+	margin-top:4%;
+	padding-top:2%;
+	box-shadow: 10px 3px 12px 12px gray; 
+    Background-image:url('../images/pl6.png');
+	margin-bottom:7%;
+	color:white;
+	font-style:italic;
+}
+
+
+
+
+
+/* ce main est en commun entre qlq pages */
+main{ 
+   /* background-image: url('images/p4.jpg'); */
+   /* box-shadow: 5px 5px 5px gray; */
+   border-radius: 5px;
+   margin-left:14%;
+   margin-right:20%;
+   margin-top:3%;
+   width:68%;
+   float:center;
+   margin-bottom:28%;
+   padding-left:1%;
+   padding-right:1%;
+   text-align:justify;
+   font-family:Garamond;
+   font-size:19px;
+   background-color:white;
+    }
+/* pour tt les titres h2 de tte les pages */
+main  h2 
+{
+color:purple;
+padding-left:2%;
+padding-top:2%;
+text-decoration:underline;
+
+}
+/* pour les section  de la page intodution */
+#main_intro section
+{
+	 /* box-shadow:8px 8px 5px 7px gray; */
+	 margin-bottom:5%;
+}
+
+
+/* pour les titre de sections de la page intodution */
+#main_intro section header
+{
+	font-family:Garamond;
+   /* font-size:18px; */
+}
+
+
+
+
+
+
+/* pour les images de la pages HTML */
+#main_HTML img
+{
+	width:80%;
+	margin-left:18%;
+	margin-right:12%;
+}
+
+/* pour l image qui montre  la diff entre html sans et avec css */
+#exemple
+{
+	width:100%;
+     text-align:center;
+	
+}
+
+
+header  #head_css , #head_allerPlusLoin
+{   
+    padding-top:3%;
+	margin-left:24%;
+	margin-right:27%;
+	padding-top:2%;
+	padding-bottom:3%;
+	box-shadow: 10px 3px 12px 12px gray; 
+    Background-image:url('../images/pl6.png');
+	text-align:center;
+	margin-bottom:7%;
+	color:white;
+	font-style:italic;
+}
+
+/* pour les tableaux */
+table,table td,table th
+ {
+  border:1px solid black;
+  padding:8px; 
+  border: 2px solid black;
+  border-collapse: collapse;
+  font-family:Times New Roman,Georgia,Courier New;
+  text-align:justify;
+  
+  
+  /* margin-right:16%; */
+ }
+ table
+ {
+	 margin-left:21%;
+	 width:60%;
+	 background-image: url('../images/pl6.jpg');
+ }
+ 
+
+.tabl_CSS
+{
+width:75%;
+margin-left:11%;
+margin-right:11%;
+
+}
+
+
+
+
+
+
+/* Pour le main de la page CSS  */
+#main_css
+{
+   border-radius: 5px;
+   margin-left:14%;
+   margin-right:20%;
+   margin-top:3%;
+   width:68%;
+   float:center;
+   margin-bottom:28%;
+   padding-left:2%;
+   padding-right:2%;
+   text-align:justify;
+}
+
+
+/* Pour les images de la page *Aller plus loin */
+
+section .figur_AllerPlusLoin  img
+{
+	margin-left:13%;
+	margin-right:15%;
+	background-color:red;
+	width:90%;
+	height:70%;
+}
+
+/* centrer les legendes des images de  la page *Aller plus loin  */
+section .figur_AllerPlusLoin figcaption
+{
+	margin-left:21%;
+}
+
+
+#nav_interne_AllerPlusLoin
+{
+	margin-top:8%;
+}
+
+/* pour les liens qui sont dans les paragraphes de la page  *Aller plus loin  */
+.lien_zozor
+{
+	color: purple;                  /* Couleur du texte */
+    text-decoration: none;        /* Suppression du soulignement */
+    font-weight:bolder;	
+}
+
+/* Effet des liens lors du survol */
+.lien_zozor:hover 
+{
+	 font-weight:bolder;	
+	 font-size:24px;
+}
+
+
+
+
+
+
+
+
+
+/* Pour la page de certificat de réussite */
+
+#body_Attestaion{
+   background-image:url("../images/pl9.jpg");
+   background-position:center;
+}
+#body_Attestaion #frame
+{
+   width:70%;
+   margin-left:14%;
+   margin-right:8%;
+   margin-bottom:3%;
+
+}
+
+#body_Attestaion h1
+{
+    padding:1%;
+    text-align:center;
+	font-weight:bolder;
+	font-family:"Geneva";
+	margin-right:1%;
+	color:purple;
+	text-decoration:underline;
+
+}
+
+#body_Attestaion header
+{
+     margin:auto;
+}
+
+#body_Attestaion h2{
+   margin-top:5%;
+   margin-left:15%;
+   margin-bottom:4%;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/******************************* CE QUI EST EN COMMUN ENTRE LES DIFFENRENTES PAGES  ******************************/ 
+
+
+/* bouton suivant en commun entre les diff pages*/
+#nxt{
+	
+	width:45%;
+	border-radius: 5px;
+    background-image:center;
+    margin-left:40%;
+    height:70px;
+	background-color:rgb(0,115,164);
+	padding:3%;
+	font-size:20px;
+	font-weight:bolder;
+	pointer:cursor;
+}
+
+/* le div ou on a mit le bouton nxt (qui est juste au dessus) */
+#div_svt
+{
+    margin-top:12%;
+	padding-bottom:10%;
+}
+
+
+
+/* lorsqu on survole sur le bouton suivant les ecritures  s agrandissent,la couleur change .... */
+#nxt:hover
+
+{
+	
+	font-weight:bolder;
+	font-size:27px;
+	width:48%;
+	font-style:italic;
+	/* text-shadow:4px 8px 4px red; */
+
+}
+
+
+
+
+/* un menu  pour aller au diff titres de la page sans  faire de scrolling à chaque fois */
+.nav_interne{
+	
+   float:right;
+   /* background-color:; */
+   margin-left:2%;
+   width:18%;	
+   padding: 20px;
+   padding-right:1%;
+   margin-top:6%;
+   top:2%;
+   left:80%;
+   
+   position:fixed;  /* fixer le menu , quand on fait le scrolling il restera à sa place  */
+   
+   
+   
+}
+.nav_interne a{text-decoration:none;
+color:white;
+/* color: white; */
+}
+
+
+.nav_interne ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav_interne li {
+    padding: 12px;
+    margin-bottom: 12px;
+    color: white;
+    background-image: url('../images/p3.jpg');
+	
+
+}
+
+
+
+.nav_interne li:hover {
+ padding:8%;
+ Background-image:url('../images/v.jpg');
+    
+}
+
+
+
+
+
+/* un menu en commun entre toute les pages  (introduction,HTML,CSS,Aller plus loin)  qui mène vers d autres pages*/
+
+/* Pour la partie a gauche, celle des options */
+.navbar {
+  float:left;
+  width:7;
+  position:fixed;
+  top:6%;
+  left:0px;
+  bottom:0px;
+
+  box-shadow: rgba(12,43, 30, 0.2) 0 4px 14px;
+  margin-bottom:8%;
+  margin-top:3%;
+  
+   
+  
+}
+
+.navbar:hover {
+  width:14%;
+  
+}
+
+.navbar-menu {
+  list-style: none;
+  padding:0;
+  margin:0;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  height:100%;
+  
+  /* background-image: url('images/p3.jpg'); */
+}
+
+.navbar-item {
+  width: 100%;
+  border-bottom:solid 1px var(--navbar-separator-color); */
+  transition: background-color var(--navbar-transition-speed);
+  Background-image:url('../images/pp3.jpg');
+  
+}
+
+.navbar-item:hover {
+  /* background-color:gray; */
+   Background-image:url('../images/v.jpg');
+   color:rgb(170,0,0);
+}
+
+
+
+.navbar-link {
+  display:flex;
+  align-items: center;
+  justify-content: flex-start;
+  height:4.1rem;
+  width:100%;
+  text-decoration: none;
+  color:white;
+  
+}
+
+/* pour les icon */
+.navbar-icon {
+  font-size: 1.5rem;
+  min-width: 2rem;
+  margin: 0 1.5rem;
+  color:var(--navbar-icon-color);
+  transition:var(--navbar-transition-speed);
+}
+
+
+
+
+
+
+/* Pour cacher les titre d'options tout au début avant qu'on survole la souris sur cette partie nav   */
+.navbar:not(:hover) .navbar-title {
+  display:none;
+  
+}
+
+
+
+.logo .navbar-title {
+  font-size:1.5rem;
+  font-weight:bold;
+  margin-left:1.5rem;
+}
+
+.navbar:hover .logo .navbar-icon {
+  transform:rotate(180deg);
+}
+
+
+
+#picture
+{
+	width:18%;
+	radius:8%;
+}
+
+p
+{
+  text-align :justify; 
+  font-family:Times New Roman/Georgia/Courier New;
+  margin-right:3%;
+  margin-left:3%;
+}
+figure{
+	
+	 text-align :center;
+	 width:80%;
+}
+
+
+
+
+
+
+/* Le footer pour toute les pages(introduction,HTML,CSS et Aller plus loins */
+/* le bloc de pied de page */
+footer 
+{
+	
+  clear :both;
+  margin-top:18%;
+  font-family : Cooper Std Black;
+  margin-left:11%;
+  margin-right:18%;
+  padding:5%;
+  padding-top:2%;
+  padding-left:3%;
+  background-color:gray;
+  margin-bottom:5%;
+  top:70%;
+  left:11%;
+ }
+
+/* pour la partie des reseaux sociaux */
+footer .ReseauxSoc
+{
+
+  color:blue;
+  font-size:30px;
+  margin-left:4px;
+  transition:var(--navbar-transition-speed);
+ 
+}
+
+/* la partie gauche de footer */
+.footer-left
+{
+     float:left;
+	margin-right:1%;
+}
+
+
+/* la partie au milieu de footer */
+.footer-center
+{
+	margin-top:6%;
+	margin-right:2%;
+    float:center;
+}
+
+/* la partie à droite de footer */
+.footer-right
+{
+	float:right;
+	margin-top:6%;
+	
+}
+
+
+
+.footer-right .footer-center .footer-left
+{
+ width:33%;
+ display: inline-block;
+}
+/* pour le logo de pied de page */
+#picture
+{
+	width:31%;
+    border-radius:50%;
+	height:90px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/************************** faire du responsive design : la page sera affichée verticalement dès que la largeur de l’écran sera moins de 640px ******************************/
+
+@media screen and (max-width: 640px)
+{
+
+
+/* Pour le header de la page intodution */
+#header1 
+{ 
+   
+   font-size:10px;
+   margin-left:20%;
+   padding:0%;
+}	
+
+
+/* ce main est en commun entre qlq pages */
+main{ 
+   /* background-image: url('images/p4.jpg'); */
+   /* box-shadow: 5px 5px 5px gray; */
+
+   margin-left:18%;
+   margin-right:23%;
+   margin-top:3%;
+   width:63%;
+   font-size:17px;
+   
+    }
+
+
+/* pour les section  de la page intodution */
+#main_intro section
+{
+	 margin-bottom:5%;
+	 font-size:14px;
+	 margin-bottom:10%;
+}
+#main_intro section p
+{
+	
+	 font-size:16px;
+}
+
+#main_intro section img
+{
+   width:85%;	
+}
+
+
+
+
+
+
+/* pour les images de la pages HTML */
+#main_HTML img
+{
+	width:auto%;
+	margin-left:1%;
+	
+}
+
+
+
+/* pour les tableaux */
+table,table td,table th
+ {
+  border:1px solid black;
+  padding:3px; 
+  border: 2px solid black;
+  border-collapse: collapse;
+  font-family:Times New Roman,Georgia,Courier New;
+  text-align:justify;
+  
+  /* margin-right:16%; */
+ }
+ table
+ {
+	 margin-left:1%;
+	 width:90%;
+ }
+ 
+
+.tabl_CSS
+{
+width:auto%;
+margin-left:9%;
+margin-right:4%;
+
+background
+}
+
+
+
+ header #head_css
+{   
+    
+	margin-left:17%;
+	padding-bottom:3%;
+	font-size:22px;
+}
+
+  #head_css , #head_allerPlusLoin
+{   
+	margin-left:26%;
+	font-size:22px;
+}
+
+#main_AllerPlusLoin
+{
+	font-size:12px;
+}
+
+/* le header de la deuxieme page HTML */
+#header_html h1 
+{
+	text-align:center;
+	margin-left:16%;
+	width:60%;
+	font-size:18px;
+}
+#main_HTML section header h2 
+{
+	font-size:19px;
+}
+
+#main_css  h2 
+{
+	font-size:17px;
+}
+
+
+/* Pour le main de la page CSS  */
+#main_css
+{
+   border-radius: 5px;
+   margin-left:14%;
+   margin-right:20%;
+   margin-top:3%;
+   width:68%;
+   float:center;
+   margin-bottom:28%;
+   padding-left:2%;
+   padding-right:2%;
+   text-align:justify;
+}
+
+
+/* Pour les images de la page *Aller plus loin */
+
+section .figur_AllerPlusLoin  img
+{
+	margin-left:3%;
+	margin-right:15%;
+	background-color:red;
+	width:90%;
+	height:70%;
+}
+
+/* centrer les legendes des images de  la page *Aller plus loin  */
+section .figur_AllerPlusLoin figcaption
+{
+	margin-left:8%;
+}
+
+
+#nav_interne_AllerPlusLoin
+{
+	margin-top:8%;
+}
+
+/* pour les liens qui sont dans les paragraphes de la page  *Aller plus loin  */
+.lien_zozor
+{
+	color: purple;                  /* Couleur du texte */
+    text-decoration: none;        /* Suppression du soulignement */
+    font-weight:bolder;	
+}
+
+/* Effet des liens lors du survol */
+.lien_zozor:hover 
+{
+	 font-weight:bolder;	
+	 font-size:20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Pour la page de certificat de réussite */
+
+
+#body_Attestaion #frame
+{
+   width:85%;
+   margin-left:10%;
+   margin-right:8%;
+ 
+}
+
+#body_Attestaion h1
+{
+ font-size:20px;
+
+}
+
+
+
+#body_Attestaion h2{
+   margin-left:12%;
+   font-size:16px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/******************************* CE QUI EST EN COMMUN ENTRE LES DIFFENRENTES PAGES  ******************************/ 
+
+
+/* bouton suivant en commun entre les diff pages*/
+#nxt{
+	
+	
+	width:15%;
+	border-radius: 5px;
+   margin-left:35%;
+    height:60px;
+	/* padding:3%; */
+	font-size:15px;
+	
+}
+
+
+
+
+
+/* lorsqu on survole sur le bouton suivant les ecritures  s agrandissent,la couleur change .... */
+#nxt:hover
+
+{
+	
+	
+	font-size:18px;
+
+}
+
+
+
+
+/* un menu  pour aller au diff titres de la page sans  faire de scrolling à chaque fois */
+.nav_interne{
+	
+   
+   top:2%;
+   font-size:11px;
+ 
+   
+}
+.nav_interne li {
+    padding: 13px;
+    margin-bottom: 3px;
+    background-color: #33b5e5;
+    color: white;
+	
+   /* background-image: url('images/p3.jpg'); */
+}
+
+
+
+
+
+
+
+
+/* un menu en commun entre toute les pages  (introduction,HTML,CSS,Aller plus loin)  qui mène vers d autres pages*/
+
+/* Pour la partie a gauche, celle des options */
+.navbar {
+  font-size:11px;
+ }
+
+.navbar:hover {
+  width:20%;
+}
+
+
+.navbar-item:hover {
+  background-color:gray;
+}
+
+
+.navbar-icon {
+  font-size: 1.8 rem;
+  min-width: 0.5rem;
+  margin: 0 2 rem;
+  font-size:17px;
+}
+
+
+
+.navbar-menu {
+  list-style: none;
+  padding:0;
+  margin:0;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  height:100%;
+  
+  /* background-image: url('images/p3.jpg'); */
+}
+
+.navbar-item {
+  width: 100%;
+  border-bottom:solid 1px var(--navbar-separator-color); */
+  transition: background-color var(--navbar-transition-speed);
+  Background-image:url('../images/pp3.jpg');
+  
+}
+
+.navbar-item:hover {
+  /* background-color:gray; */
+   Background-image:url('../images/v.jpg');
+   color:rgb(170,0,0);
+}
+
+
+
+.navbar-link {
+  display:flex;
+  align-items: center;
+  justify-content: flex-start;
+  height:3.5rem;
+  width:90%;
+  text-decoration: none;
+  color:white;  
+}
+
+
+
+#picture
+{
+	width:18%;
+	radius:8%;
+}
+
+p
+{
+  text-align :justify; 
+  font-family:Times New Roman/Georgia/Courier New;
+  margin-right:3%;
+  margin-left:3%;
+}
+figure{
+	
+	 text-align :center;
+	 width:80%;
+}
+
+
+
+
+
+
+/* Le footer pour toute les pages(introduction,HTML,CSS et Aller plus loins */
+/* le bloc de pied de page */
+footer 
+{ 
+  margin-left:19%;
+  font-size:10px;
+  padding:6%;
+ }
+
+/* pour la partie des reseaux sociaux */
+footer .ReseauxSoc
+{
+
+  font-size:20px;
+ 
+}
+
+/* pour le logo de pied de page */
+#picture
+{
+	width:20%;
+	height:60px;
+}
+
+
+
+
+
+
+
+
+	
+	
+}
+
+
+
